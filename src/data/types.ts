@@ -48,6 +48,7 @@ export type CategoryId =
   | 'deitadas'
   | 'relaxamento'
   | 'meditacao'
+  | 'mudra'
 
 export interface Category {
   id: CategoryId
@@ -58,7 +59,26 @@ export interface Category {
 
 export type Level = 'iniciante' | 'intermedio' | 'avancado'
 
-export type ItemKind = 'asana' | 'pranayama' | 'pratica'
+export type ItemKind = 'asana' | 'pranayama' | 'mudra' | 'pratica'
+
+/** Chakras (centros energéticos) — ver data/chakras.ts. */
+export type ChakraId = 'muladhara' | 'svadhisthana' | 'manipura' | 'anahata' | 'vishuddha' | 'ajna' | 'sahasrara'
+
+/**
+ * Efeito predominante no sistema nervoso e na energia:
+ * calmante (langhana), energizante (brahmana) ou equilibrante (samana).
+ */
+export type Efeito = 'calmante' | 'energizante' | 'equilibrante'
+
+/** Acessórios (props) usados nas variações. */
+export type Acessorio = 'cinto' | 'bastao' | 'bloco' | 'manta' | 'almofada' | 'parede' | 'cadeira'
+
+/** Variação ou adaptação de uma postura, com ou sem acessórios. */
+export interface Variacao {
+  nome: string
+  descricao: string
+  acessorios?: Acessorio[]
+}
 
 export interface Pose {
   id: string
@@ -85,6 +105,14 @@ export interface Pose {
   contraPostura?: string[]
   /** Dicas de alinhamento / instrução */
   dicas?: string[]
+  /** Efeito predominante: calmante, energizante ou equilibrante. */
+  efeito?: Efeito
+  /** Chakras principalmente estimulados ou equilibrados (o primeiro é o principal). */
+  chakras?: ChakraId[]
+  /** Efeitos subtis: energéticos (prana), mentais e emocionais. */
+  efeitosSubtis?: string[]
+  /** Variações e adaptações, incluindo o uso de acessórios (cinto, bastão, bloco…). */
+  variacoes?: Variacao[]
   figura: PoseFigure
 }
 

@@ -16,7 +16,7 @@ export const HATHA_PHASE_TEMPLATE: PhaseTemplate[] = [
     pesoDuracao: 5,
     notas: 'Chegada ao tapete, intenção da prática, observação da respiração.',
   },
-  { nome: 'Pranayama', categoriasSugeridas: ['pranayama'], pesoDuracao: 8 },
+  { nome: 'Pranayama', categoriasSugeridas: ['pranayama', 'mudra'], pesoDuracao: 8 },
   {
     nome: 'Aquecimento',
     categoriasSugeridas: ['aquecimento', 'sentadas', 'deitadas'],
@@ -34,7 +34,7 @@ export const HATHA_PHASE_TEMPLATE: PhaseTemplate[] = [
   { nome: 'Relaxamento final', categoriasSugeridas: ['relaxamento', 'deitadas'], pesoDuracao: 14 },
   {
     nome: 'Meditação e encerramento',
-    categoriasSugeridas: ['meditacao', 'centramento', 'pranayama'],
+    categoriasSugeridas: ['meditacao', 'centramento', 'pranayama', 'mudra'],
     pesoDuracao: 6,
   },
 ]

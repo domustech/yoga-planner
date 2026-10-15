@@ -1,6 +1,8 @@
-import { AlertTriangle, Clock, Lightbulb, Plus, Wind, X } from 'lucide-react'
+import { AlertTriangle, Clock, Lightbulb, Plus, Sparkles, Wind, X } from 'lucide-react'
 import { useEffect } from 'react'
-import { CATEGORY_MAP, LEVEL_LABEL } from '../data/categories'
+import type { CSSProperties } from 'react'
+import { ACESSORIO_LABEL, CATEGORY_MAP, EFEITO_MAP, LEVEL_LABEL } from '../data/categories'
+import { CHAKRA_MAP } from '../data/chakras'
 import { getPose } from '../data/poses'
 import { formatDuration } from '../lib/utils'
 import { CategoryChip } from './CategoryChip'
@@ -26,6 +28,7 @@ export function PoseDetails({ poseId, onClose, onAdd, addLabel }: Props) {
   const pose = poseId ? getPose(poseId) : undefined
   if (!pose) return null
   const cat = CATEGORY_MAP[pose.categorias[0]]
+  const efeito = pose.efeito ? EFEITO_MAP[pose.efeito] : undefined
 
   return (
     <div className="modal-backdrop" onClick={onClose} role="presentation">
@@ -62,6 +65,25 @@ export function PoseDetails({ poseId, onClose, onAdd, addLabel }: Props) {
             </span>
           </div>
 
+          {(efeito || (pose.chakras && pose.chakras.length > 0)) && (
+            <div className="modal-meta modal-subtle-meta">
+              {efeito && (
+                <span className="efeito-tag" style={{ '--ef': efeito.cor } as CSSProperties} title={efeito.descricao}>
+                  {efeito.nome}
+                </span>
+              )}
+              {pose.chakras?.map((c) => {
+                const ch = CHAKRA_MAP[c]
+                return (
+                  <span key={c} className="chakra-tag" style={{ '--ch': ch.cor } as CSSProperties} title={ch.qualidades}>
+                    <span className="chakra-dot" />
+                    {ch.nome} · {ch.nomePT}
+                  </span>
+                )
+              })}
+            </div>
+          )}
+
           {pose.respiracao && (
             <p className="modal-row">
               <Wind size={16} /> <span><strong>Respiração:</strong> {pose.respiracao}</span>
@@ -91,6 +113,19 @@ export function PoseDetails({ poseId, onClose, onAdd, addLabel }: Props) {
             )}
           </div>
 
+          {pose.efeitosSubtis && pose.efeitosSubtis.length > 0 && (
+            <section className="modal-tips modal-subtle">
+              <h3>
+                <Sparkles size={14} /> Efeitos subtis
+              </h3>
+              <ul>
+                {pose.efeitosSubtis.map((e) => (
+                  <li key={e}>{e}</li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           {pose.dicas && pose.dicas.length > 0 && (
             <section className="modal-tips">
               <h3>
@@ -99,6 +134,25 @@ export function PoseDetails({ poseId, onClose, onAdd, addLabel }: Props) {
               <ul>
                 {pose.dicas.map((d) => (
                   <li key={d}>{d}</li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {pose.variacoes && pose.variacoes.length > 0 && (
+            <section className="modal-tips">
+              <h3>Variações e acessórios</h3>
+              <ul className="variacoes">
+                {pose.variacoes.map((v) => (
+                  <li key={v.nome}>
+                    <strong>{v.nome}</strong>
+                    {v.acessorios?.map((a) => (
+                      <span key={a} className="acessorio-tag">
+                        {ACESSORIO_LABEL[a]}
+                      </span>
+                    ))}
+                    <div className="muted">{v.descricao}</div>
+                  </li>
                 ))}
               </ul>
             </section>

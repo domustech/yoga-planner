@@ -1,4 +1,4 @@
-import type { Category, CategoryId, Level } from './types'
+import type { Acessorio, Category, CategoryId, Efeito, Level } from './types'
 
 export const CATEGORIES: Category[] = [
   { id: 'centramento', nome: 'Centramento', descricao: 'Chegada, intenção, presença e silêncio inicial.', cor: '#8e7cc3' },
@@ -17,6 +17,7 @@ export const CATEGORIES: Category[] = [
   { id: 'deitadas', nome: 'Deitadas', descricao: 'Posturas em decúbito dorsal ou ventral.', cor: '#9aa7b8' },
   { id: 'relaxamento', nome: 'Relaxamento', descricao: 'Integração e descanso profundo.', cor: '#6b7fb3' },
   { id: 'meditacao', nome: 'Meditação', descricao: 'Concentração, observação e encerramento.', cor: '#7c6aa6' },
+  { id: 'mudra', nome: 'Mudras e bandhas', descricao: 'Gestos e fechos energéticos que dirigem o prana.', cor: '#c9a227' },
 ]
 
 export const CATEGORY_MAP: Record<CategoryId, Category> = Object.fromEntries(
@@ -30,3 +31,34 @@ export const LEVEL_LABEL: Record<Level, string> = {
 }
 
 export const LEVELS: Level[] = ['iniciante', 'intermedio', 'avancado']
+
+export interface EfeitoInfo {
+  id: Efeito
+  nome: string
+  descricao: string
+  cor: string
+}
+
+/** Efeito predominante da prática (tradição: langhana / brahmana / samana). */
+export const EFEITOS: EfeitoInfo[] = [
+  { id: 'calmante', nome: 'Calmante', descricao: 'Langhana — acalma, interioriza, reduz a agitação.', cor: '#5b8fb9' },
+  { id: 'energizante', nome: 'Energizante', descricao: 'Brahmana — aquece, desperta, expande.', cor: '#e08a3c' },
+  { id: 'equilibrante', nome: 'Equilibrante', descricao: 'Samana — harmoniza e estabiliza.', cor: '#5fa07a' },
+]
+
+export const EFEITO_MAP: Record<Efeito, EfeitoInfo> = Object.fromEntries(EFEITOS.map((e) => [e.id, e])) as Record<
+  Efeito,
+  EfeitoInfo
+>
+
+export const ACESSORIO_LABEL: Record<Acessorio, string> = {
+  cinto: 'Cinto',
+  bastao: 'Bastão',
+  bloco: 'Bloco',
+  manta: 'Manta',
+  almofada: 'Almofada',
+  parede: 'Parede',
+  cadeira: 'Cadeira',
+}
+
+export const ACESSORIOS: Acessorio[] = ['cinto', 'bastao', 'bloco', 'manta', 'almofada', 'parede', 'cadeira']

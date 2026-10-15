@@ -6,6 +6,7 @@ import './index.css'
 import { ClassEditorPage } from './pages/ClassEditorPage'
 import { ClassesPage } from './pages/ClassesPage'
 import { FiguresPage } from './pages/FiguresPage'
+import { KnowledgePage } from './pages/KnowledgePage'
 import { LibraryPage } from './pages/LibraryPage'
 import { PrintPage } from './pages/PrintPage'
 
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <ClassesPage /> },
       { path: 'biblioteca', element: <LibraryPage /> },
+      { path: 'saber', element: <KnowledgePage /> },
       { path: 'figuras', element: <FiguresPage /> },
       { path: 'aula/:id', element: <ClassEditorPage /> },
     ],

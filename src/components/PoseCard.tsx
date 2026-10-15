@@ -1,7 +1,8 @@
 import { useDraggable } from '@dnd-kit/core'
 import { Clock, Info, Plus } from 'lucide-react'
 import type { CSSProperties } from 'react'
-import { CATEGORY_MAP, LEVEL_LABEL } from '../data/categories'
+import { CATEGORY_MAP, EFEITO_MAP, LEVEL_LABEL } from '../data/categories'
+import { CHAKRA_MAP } from '../data/chakras'
 import type { Pose } from '../data/types'
 import { formatDuration } from '../lib/utils'
 import { CategoryChip } from './CategoryChip'
@@ -43,6 +44,18 @@ export function PoseCard({ pose, onDetails, onAdd, addTitle, dragRef, dragProps,
               <Clock size={12} /> {formatDuration(pose.duracaoSugerida)}
               {pose.bilateral && <small> ×2</small>}
             </span>
+            {pose.efeito && (
+              <span className="efeito-tag" style={{ '--ef': EFEITO_MAP[pose.efeito].cor } as CSSProperties} title={EFEITO_MAP[pose.efeito].descricao}>
+                {EFEITO_MAP[pose.efeito].nome}
+              </span>
+            )}
+            {pose.chakras && pose.chakras.length > 0 && (
+              <span className="chakra-dots" title={pose.chakras.map((c) => CHAKRA_MAP[c].nomePT).join(', ')}>
+                {pose.chakras.map((c) => (
+                  <span key={c} className="chakra-dot" style={{ '--ch': CHAKRA_MAP[c].cor } as CSSProperties} />
+                ))}
+              </span>
+            )}
           </div>
         )}
       </div>

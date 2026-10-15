@@ -24,6 +24,7 @@ export default function App() {
             Aulas
           </NavLink>
           <NavLink to="/biblioteca">Biblioteca</NavLink>
+          <NavLink to="/saber">Saber</NavLink>
         </div>
       </nav>
       <Outlet />

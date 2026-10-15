@@ -23,9 +23,17 @@ Abra <http://localhost:5173>. Para gerar a versão de produção: `npm run build
   (Centramento → Pranayama → Aquecimento → Saudação ao Sol → Posturas em pé → Posturas no chão →
   Inversões → Relaxamento final → Meditação e encerramento). As fases podem ser renomeadas,
   reordenadas, removidas ou criadas de raiz; cada fase tem notas e categorias sugeridas.
-- **Biblioteca** com 73 posturas e práticas (asanas, pranayamas, aquecimentos, relaxamento e meditação),
-  cada uma com nome em português, sânscrito e inglês, categorias, nível, duração sugerida, respiração,
-  benefícios, precauções e dicas de instrução.
+- **Biblioteca** com 123 posturas e práticas (asanas, pranayamas, mudras e bandhas, aquecimentos, relaxamento
+  e meditação), cada uma com nome em português, sânscrito e inglês, categorias, nível, duração sugerida,
+  respiração, benefícios, precauções, dicas de instrução, **efeitos subtis** (energéticos, mentais, emocionais),
+  **efeito predominante** (calmante, energizante, equilibrante), **chakras** e **variações** com acessórios
+  (cinto, bastão, bloco, manta, almofada, parede, cadeira).
+- **Filtros por intenção**: a biblioteca filtra por tipo (asanas, pranayama, mudras, práticas), nível, efeito,
+  chakra e acessório. Com um efeito ou chakra escolhido (ex.: calmante + coração), a lista agrupa-se em
+  pranayama, mudras, asanas e práticas para montar a aula.
+- **Saber** (rota `/saber`): conhecimento de apoio para meditações e conversas com alunos: caminhos do Yoga,
+  os oito membros e sutras essenciais de Patanjali, Vedanta básico (na linha de Swami Dayananda Saraswati),
+  chakras ligados à biblioteca, roteiros de meditação e glossário, com pesquisa.
 - **Figuras ilustrativas** geradas por SVG a partir das articulações de cada postura (sem imagens externas).
 - **Editor**: arrastar e largar da biblioteca para as fases, reordenar dentro da fase, mover entre fases,
   duração por postura (m:ss, botões ±15 s), indicação de posturas bilaterais, notas por postura,
@@ -39,7 +47,9 @@ Abra <http://localhost:5173>. Para gerar a versão de produção: `npm run build
 src/
   data/
     types.ts        Modelo de dados (Pose, YogaClass, ClassPhase, PoseFigure…)
-    categories.ts   Categorias (cores, descrições) e níveis
+    categories.ts   Categorias (cores, descrições), níveis, efeitos e acessórios
+    chakras.ts      Os sete chakras (qualidades, práticas, reflexões)
+    conhecimento.ts Caminhos do Yoga, Patanjali, Vedanta, roteiros de meditação, glossário
     phases.ts       Modelo de fases de uma aula de Hatha
     poses.ts        Biblioteca de posturas (conteúdo + figuras)
   components/
@@ -49,7 +59,8 @@ src/
   pages/
     ClassesPage     Lista de aulas
     ClassEditorPage Editor (fases + biblioteca, drag & drop)
-    LibraryPage     Galeria de posturas
+    LibraryPage     Galeria de posturas (filtros por tipo, nível, efeito, chakra, acessório)
+    KnowledgePage   Saber: conhecimento de apoio (/saber)
     PrintPage       Vista de impressão (/aula/:id/imprimir)
     FiguresPage     Revisão de todas as figuras (/figuras, sem link no menu)
   store/
@@ -62,7 +73,9 @@ Stack: Vite, React 19, TypeScript, zustand, @dnd-kit, react-router, lucide-react
 
 ## Como adicionar uma postura
 
-Em `src/data/poses.ts`, acrescentar um objeto ao array `POSES`. A figura é definida por pontos num
+Em `src/data/poses.ts`, acrescentar um objeto ao array `POSES` (ver `Pose` em `types.ts`: além do conteúdo
+descritivo, preencher `efeito`, `chakras`, `efeitosSubtis` e, se fizer sentido, `variacoes` com `acessorios`).
+A figura é definida por pontos num
 quadrado 0–100 (chão em y≈88): `head`, `neck`, `pelvis`, `spine` (opcional, curva o tronco),
 `arms` = [ombro, cotovelo, pulso] e `legs` = [anca, joelho, tornozelo, ponta do pé].
 Em vista lateral (`view: 'side'`), se só houver um braço/perna ele é duplicado automaticamente
