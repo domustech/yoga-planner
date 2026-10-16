@@ -147,3 +147,28 @@ export interface YogaClass {
   criadoEm: string
   atualizadoEm: string
 }
+
+/** Partes do corpo usadas nas indicações de alinhamento. */
+export type ParteCorpo =
+  | 'pes'
+  | 'pernas'
+  | 'joelhos'
+  | 'ancas'
+  | 'coluna'
+  | 'peito'
+  | 'ombros'
+  | 'bracos'
+  | 'maos'
+  | 'cabeca'
+  | 'olhar'
+  | 'respiracao'
+  | 'atencao'
+
+/** O que a postura deve assegurar, parte a parte, e erros comuns a corrigir. */
+export interface Alinhamento {
+  partes: Partial<Record<ParteCorpo, string>>
+  erros?: string[]
+  /** Como entrar e como sair da postura (opcional). */
+  entrada?: string
+  saida?: string
+}

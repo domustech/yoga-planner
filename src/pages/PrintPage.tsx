@@ -3,7 +3,7 @@ import type { CSSProperties } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { ClassTimeline } from '../components/ClassTimeline'
 import { ExportPdfButton } from '../components/ExportPdfButton'
-import { PoseFigure } from '../components/PoseFigure'
+import { PoseVisual } from '../components/PoseVisual'
 import { CATEGORY_MAP, LEVEL_LABEL } from '../data/categories'
 import { getPose } from '../data/poses'
 import { classDuration, classItemCount, formatDuration, formatDurationLong, phaseDuration } from '../lib/utils'
@@ -71,7 +71,7 @@ export function PrintPage() {
                 return (
                   <div key={it.id} className="print-card" style={{ '--cat': cat.cor } as CSSProperties}>
                     <div className="print-card-figure">
-                      <PoseFigure figura={pose.figura} />
+                      <PoseVisual pose={pose} />
                     </div>
                     <strong>{pose.nome}</strong>
                     <em>{pose.sanscrito}</em>

@@ -75,7 +75,15 @@ Notas:
 - **Saber** (rota `/saber`): conhecimento de apoio para meditações e conversas com alunos: caminhos do Yoga,
   os oito membros e sutras essenciais de Patanjali, Vedanta básico (na linha de Swami Dayananda Saraswati),
   chakras ligados à biblioteca, roteiros de meditação e glossário, com pesquisa.
-- **Figuras ilustrativas** geradas por SVG a partir das articulações de cada postura (sem imagens externas).
+- **Ilustrações em aquarela**: cada postura pode ter uma ilustração em `public/poses/<id>.webp` (estilo aguarela,
+  mesma personagem em todas); quando não existe, a app mostra a figura esquemática gerada por SVG a partir das
+  articulações. As ilustrações aparecem nos cartões, no editor, no detalhe, na impressão e no PDF. O fluxo para
+  gerar e importar as imagens está em [`docs/imagens/README.md`](docs/imagens/README.md)
+  (`npm run imagens:prompts` e `npm run imagens:importar -- <pasta>`); a página `/figuras` mostra o que falta.
+- **Alinhamento**: ao clicar numa postura, a secção "Alinhamento — o que a postura deve assegurar" lista as
+  indicações parte a parte (pés, pernas, joelhos, ancas, coluna, peito, ombros, braços, mãos, cabeça, olhar,
+  respiração, atenção) e os erros comuns, para todas as 123 posturas e práticas (`src/data/alinhamento/`).
+  No editor, cada postura da aula tem a mesma lista em "Alinhamento: o que assegurar".
 - **Editor**: arrastar e largar da biblioteca para as fases, reordenar dentro da fase, mover entre fases,
   duração por postura (m:ss, botões ±15 s), indicação de posturas bilaterais, notas por postura,
   barra cronológica colorida por categoria e comparação com a duração alvo.

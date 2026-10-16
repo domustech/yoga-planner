@@ -186,7 +186,12 @@ function layoutCard(doc: jsPDF, item: ClassItem): CardLayout | null {
   return { pose, item, nameLines, sansLines, notesLines, h }
 }
 
-function drawCard(doc: jsPDF, c: CardLayout, x: number, y: number, h: number) {
+/** Opções de geração: `imagens` mapeia id da postura → data URL (JPEG/PNG) da ilustração. */
+export interface PdfOptions {
+  imagens?: Record<string, string>
+}
+
+function drawCard(doc: jsPDF, c: CardLayout, x: number, y: number, h: number, opts: PdfOptions) {
   const color = hexToRgb(CATEGORY_MAP[c.pose.categorias[0]].cor)
 
   doc.setDrawColor(BORDER[0], BORDER[1], BORDER[2])
@@ -200,12 +205,17 @@ function drawCard(doc: jsPDF, c: CardLayout, x: number, y: number, h: number) {
   doc.setLineCap('round')
   doc.line(x + 2.5, y + 0.9, x + CARD_W - 2.5, y + 0.9)
 
-  // figura
+  // ilustração (aquarela) ou figura esquemática
   const fx = x + (CARD_W - FIG) / 2
   const fy = y + CARD_PAD + 0.5
-  doc.setFillColor(SURFACE2[0], SURFACE2[1], SURFACE2[2])
-  doc.roundedRect(fx, fy, FIG, FIG, 1.5, 1.5, 'F')
-  drawFigure(doc, c.pose.figura, fx, fy, FIG, color)
+  const img = opts.imagens?.[c.pose.id]
+  if (img) {
+    doc.addImage(img, img.startsWith('data:image/png') ? 'PNG' : 'JPEG', fx, fy, FIG, FIG)
+  } else {
+    doc.setFillColor(SURFACE2[0], SURFACE2[1], SURFACE2[2])
+    doc.roundedRect(fx, fy, FIG, FIG, 1.5, 1.5, 'F')
+    drawFigure(doc, c.pose.figura, fx, fy, FIG, color)
+  }
 
   let ty = fy + FIG + 1.5
   const cx = x + CARD_W / 2
@@ -283,7 +293,7 @@ function chunk<T>(arr: T[], n: number): T[][] {
   return out
 }
 
-export function buildClassPdf(aula: YogaClass): jsPDF {
+export function buildClassPdf(aula: YogaClass, opts: PdfOptions = {}): jsPDF {
   const doc = new jsPDF({ unit: 'mm', format: 'a4', orientation: 'portrait', compress: true })
   doc.setProperties({ title: aula.nome, subject: 'Plano de aula de Hatha Yoga', creator: 'Yoga Planner' })
 
@@ -411,7 +421,7 @@ export function buildClassPdf(aula: YogaClass): jsPDF {
     for (const row of rows) {
       const h = rowH(row)
       ensure(h)
-      row.forEach((c, i) => drawCard(doc, c, MARGIN + i * (CARD_W + GAP), y, h))
+      row.forEach((c, i) => drawCard(doc, c, MARGIN + i * (CARD_W + GAP), y, h, opts))
       y += h + GAP
     }
     y += 4

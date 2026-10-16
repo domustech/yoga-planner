@@ -1,12 +1,14 @@
-import { AlertTriangle, Clock, Lightbulb, Plus, Sparkles, Wind, X } from 'lucide-react'
+import { AlertTriangle, Clock, Lightbulb, Plus, Ruler, Sparkles, Wind, X } from 'lucide-react'
 import { useEffect } from 'react'
 import type { CSSProperties } from 'react'
+import { getAlinhamento } from '../data/alinhamento'
 import { ACESSORIO_LABEL, CATEGORY_MAP, EFEITO_MAP, LEVEL_LABEL } from '../data/categories'
 import { CHAKRA_MAP } from '../data/chakras'
 import { getPose } from '../data/poses'
 import { formatDuration } from '../lib/utils'
+import { AlignmentList } from './AlignmentList'
 import { CategoryChip } from './CategoryChip'
-import { PoseFigure } from './PoseFigure'
+import { PoseVisual } from './PoseVisual'
 
 interface Props {
   poseId: string | null
@@ -29,6 +31,7 @@ export function PoseDetails({ poseId, onClose, onAdd, addLabel }: Props) {
   if (!pose) return null
   const cat = CATEGORY_MAP[pose.categorias[0]]
   const efeito = pose.efeito ? EFEITO_MAP[pose.efeito] : undefined
+  const alinhamento = getAlinhamento(pose.id)
 
   return (
     <div className="modal-backdrop" onClick={onClose} role="presentation">
@@ -44,7 +47,7 @@ export function PoseDetails({ poseId, onClose, onAdd, addLabel }: Props) {
         </button>
 
         <div className="modal-figure" style={{ color: cat.cor }}>
-          <PoseFigure figura={pose.figura} title={pose.nome} />
+          <PoseVisual pose={pose} title={pose.nome} />
         </div>
 
         <div className="modal-body">
@@ -88,6 +91,15 @@ export function PoseDetails({ poseId, onClose, onAdd, addLabel }: Props) {
             <p className="modal-row">
               <Wind size={16} /> <span><strong>Respiração:</strong> {pose.respiracao}</span>
             </p>
+          )}
+
+          {alinhamento && (
+            <section className="modal-align">
+              <h3>
+                <Ruler size={14} /> Alinhamento — o que a postura deve assegurar
+              </h3>
+              <AlignmentList alinhamento={alinhamento} />
+            </section>
           )}
 
           <div className="modal-cols">

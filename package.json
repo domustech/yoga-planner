@@ -14,7 +14,9 @@
     "build:pages": "tsc -b && vite build --mode pages",
     "preview:pages": "vite preview --mode pages --port 4173",
     "pdf:smoke": "node scripts/pdf-smoke.mjs",
-    "gen:smoke": "node scripts/generator-smoke.mjs"
+    "gen:smoke": "node scripts/generator-smoke.mjs",
+    "imagens:importar": "node scripts/import-pose-images.mjs",
+    "imagens:prompts": "node scripts/image-prompts.mjs"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

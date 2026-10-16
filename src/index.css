@@ -2115,3 +2115,141 @@ button.chip:hover {
   opacity: 0.6;
   cursor: progress;
 }
+
+/* ------------------------------------------------------------------------
+   Ilustrações (aquarela) com fallback para a figura esquemática
+   ------------------------------------------------------------------------ */
+
+.pose-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: #fff;
+  border-radius: inherit;
+}
+
+.pose-card-figure:has(.pose-img),
+.item-figure:has(.pose-img),
+.wiz-item .fig:has(.pose-img),
+.print-card-figure:has(.pose-img) {
+  background: #fff;
+  padding: 0;
+  overflow: hidden;
+}
+
+.modal-figure .pose-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+}
+
+.figure-tile.sem-imagem .figure-tile-img {
+  position: relative;
+}
+
+.figure-tile .falta {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: #fbefd9;
+  color: #9a6410;
+  padding: 2px 6px;
+  border-radius: 999px;
+}
+
+/* ------------------------------------------------------------------------
+   Alinhamento (o que a postura deve assegurar)
+   ------------------------------------------------------------------------ */
+
+.modal-align {
+  margin-top: 14px;
+  background: var(--surface-2);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.modal-align h3 {
+  margin-bottom: 10px;
+}
+
+.align-list {
+  margin: 0;
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 6px 14px;
+  font-size: 13.5px;
+}
+
+.align-row {
+  display: contents;
+}
+
+.align-list dt {
+  font-weight: 700;
+  color: var(--primary-700);
+  white-space: nowrap;
+}
+
+.align-list dd {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.align-erros {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.align-erros strong {
+  color: var(--danger);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.align-erros ul {
+  margin: 4px 0 0;
+  padding-left: 18px;
+  line-height: 1.45;
+}
+
+.align-entrada {
+  margin: 10px 0 0;
+  font-size: 13px;
+}
+
+.align.is-compact .align-list {
+  font-size: 12.5px;
+  gap: 4px 10px;
+}
+
+.item-align {
+  font-size: 12.5px;
+}
+
+.item-align summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--primary-700);
+}
+
+.item-align[open] summary {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 640px) {
+  .align-list {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .align-list dt {
+    margin-top: 6px;
+  }
+}

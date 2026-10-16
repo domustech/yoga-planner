@@ -1,0 +1,863 @@
+[
+  {
+    "id": "chegada-intencao",
+    "nome": "Chegada e intenção",
+    "sanscrito": "Sankalpa",
+    "ficheiro": "chegada-intencao.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Arrival & intention (Sankalpa): sitting cross-legged on a mat, eyes closed, hands in prayer at the heart, calm upright posture, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "mantra-om",
+    "nome": "Mantra OM",
+    "sanscrito": "Omkara",
+    "ficheiro": "mantra-om.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: OM chanting (Omkara): sitting cross-legged, eyes closed, hands resting on the knees palms up, lips gently parted as if chanting, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "respiracao-abdominal",
+    "nome": "Respiração abdominal",
+    "sanscrito": "Adham Pranayama",
+    "ficheiro": "respiracao-abdominal.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Diaphragmatic breathing (Adham Pranayama): sitting cross-legged, eyes closed, both hands resting on the lower belly, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "respiracao-completa",
+    "nome": "Respiração completa",
+    "sanscrito": "Dirga Pranayama",
+    "ficheiro": "respiracao-completa.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Three-part breath (Dirga Pranayama): sitting cross-legged, one hand on the belly and the other on the chest, eyes closed, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "nadi-shodhana",
+    "nome": "Respiração alternada",
+    "sanscrito": "Nadi Shodhana",
+    "ficheiro": "nadi-shodhana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Alternate nostril breathing (Nadi Shodhana): sitting cross-legged, right hand at the nose with the thumb closing the right nostril and the ring finger near the left nostril, left hand on the knee, seen from the front in three-quarter view. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "ujjayi",
+    "nome": "Respiração vitoriosa",
+    "sanscrito": "Ujjayi Pranayama",
+    "ficheiro": "ujjayi.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Victorious / ocean breath (Ujjayi Pranayama): sitting cross-legged, eyes closed, hands on the knees with index finger and thumb touching, chin slightly tucked, serene face, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "kapalabhati",
+    "nome": "Respiração do crânio brilhante",
+    "sanscrito": "Kapalabhati",
+    "ficheiro": "kapalabhati.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Skull-shining breath (Kapalabhati): sitting cross-legged with a straight spine, hands on the knees, abdomen drawn sharply inward, alert expression, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "bhastrika",
+    "nome": "Respiração do fole",
+    "sanscrito": "Bhastrika",
+    "ficheiro": "bhastrika.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Bellows breath (Bhastrika): sitting cross-legged, spine tall, hands on the knees, chest expanded in a vigorous breath, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "bhramari",
+    "nome": "Respiração da abelha",
+    "sanscrito": "Bhramari",
+    "ficheiro": "bhramari.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Bee breath (Bhramari): sitting cross-legged, eyes closed, index fingers gently closing the ears, elbows out to the sides, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "sitali",
+    "nome": "Respiração refrescante",
+    "sanscrito": "Sitali",
+    "ficheiro": "sitali.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Cooling breath (Sitali): sitting cross-legged, tongue rolled into a tube between the lips while inhaling, hands on the knees, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "jnana-mudra",
+    "nome": "Gesto do conhecimento",
+    "sanscrito": "Jnana Mudra",
+    "ficheiro": "jnana-mudra.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. Hand/face detail of a woman practicing yoga. Pose: Gesture of knowledge (Jnana Mudra): close-up of a relaxed hand resting palm up on a knee, tip of the index finger touching the tip of the thumb, the other three fingers extended. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "chin-mudra",
+    "nome": "Gesto da consciência",
+    "sanscrito": "Chin Mudra",
+    "ficheiro": "chin-mudra.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. Hand/face detail of a woman practicing yoga. Pose: Gesture of consciousness (Chin Mudra): close-up of a hand resting palm up on a knee, index fingertip touching the thumb tip, remaining fingers extended, seen slightly from above. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "chinmaya-mudra",
+    "nome": "Gesto da consciência manifesta",
+    "sanscrito": "Chinmaya Mudra",
+    "ficheiro": "chinmaya-mudra.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. Hand/face detail of a woman practicing yoga. Pose: Gesture of manifested consciousness (Chinmaya Mudra): close-up of a hand palm up, index fingertip and thumb tip touching, the other three fingers curled into the palm. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "adi-mudra",
+    "nome": "Gesto primordial",
+    "sanscrito": "Adi Mudra",
+    "ficheiro": "adi-mudra.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. Hand/face detail of a woman practicing yoga. Pose: Primal gesture (Adi Mudra): close-up of a hand palm up with the thumb folded into the palm and the four fingers closed softly over it. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "brahma-mudra",
+    "nome": "Gesto de Brahma",
+    "sanscrito": "Brahma Mudra",
+    "ficheiro": "brahma-mudra.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. Hand/face detail of a woman practicing yoga. Pose: Gesture of Brahma (Brahma Mudra): close-up of two soft fists with the thumbs inside, pressed knuckle to knuckle, palms facing up, held at the navel. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "anjali-mudra",
+    "nome": "Gesto da prece",
+    "sanscrito": "Anjali Mudra",
+    "ficheiro": "anjali-mudra.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. Hand/face detail of a woman practicing yoga. Pose: Prayer gesture (Namaste) (Anjali Mudra): close-up of two palms pressed together in front of the chest, fingers pointing up, thumbs lightly touching the sternum. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "hridaya-mudra",
+    "nome": "Gesto do coração",
+    "sanscrito": "Hridaya Mudra",
+    "ficheiro": "hridaya-mudra.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. Hand/face detail of a woman practicing yoga. Pose: Heart gesture (Hridaya Mudra): close-up of a hand palm up: index finger folded to the base of the thumb, middle and ring fingertips touching the thumb tip, little finger extended. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "padma-mudra",
+    "nome": "Gesto do lótus",
+    "sanscrito": "Padma Mudra",
+    "ficheiro": "padma-mudra.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. Hand/face detail of a woman practicing yoga. Pose: Lotus gesture (Padma Mudra): close-up of two hands at the heart forming an open lotus: heels of the hands, thumbs and little fingers touching, the other fingers spread open like petals. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "dhyana-mudra",
+    "nome": "Gesto da meditação",
+    "sanscrito": "Dhyana Mudra",
+    "ficheiro": "dhyana-mudra.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. Hand/face detail of a woman practicing yoga. Pose: Meditation gesture (Dhyana Mudra): close-up of two hands resting in the lap, right hand on top of the left, palms up, thumb tips lightly touching to form an oval. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "bhairava-mudra",
+    "nome": "Gesto de Shiva (Bhairava)",
+    "sanscrito": "Bhairava Mudra",
+    "ficheiro": "bhairava-mudra.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. Hand/face detail of a woman practicing yoga. Pose: Fierce gesture (Bhairava Mudra): close-up of two hands resting in the lap palms up, the right hand placed on top of the left. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "prana-mudra",
+    "nome": "Gesto da energia vital",
+    "sanscrito": "Prana Mudra",
+    "ficheiro": "prana-mudra.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. Hand/face detail of a woman practicing yoga. Pose: Life-force gesture (Prana Mudra): close-up of a hand palm up, tips of the ring and little fingers touching the thumb tip, index and middle fingers extended. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "apana-mudra",
+    "nome": "Gesto da eliminação",
+    "sanscrito": "Apana Mudra",
+    "ficheiro": "apana-mudra.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. Hand/face detail of a woman practicing yoga. Pose: Gesture of elimination (Apana Mudra): close-up of a hand palm up, tips of the middle and ring fingers touching the thumb tip, index and little fingers extended. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "shambhavi-mudra",
+    "nome": "Olhar para o centro das sobrancelhas",
+    "sanscrito": "Shambhavi Mudra",
+    "ficheiro": "shambhavi-mudra.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. Hand/face detail of a woman practicing yoga. Pose: Eyebrow-centre gazing (Shambhavi Mudra): close-up of a serene face with the eyes gently turned upward toward the point between the eyebrows, soft expression. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "shanmukhi-mudra",
+    "nome": "Fechar as sete portas",
+    "sanscrito": "Shanmukhi Mudra / Yoni Mudra",
+    "ficheiro": "shanmukhi-mudra.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. Hand/face detail of a woman practicing yoga. Pose: Closing the seven gates (Shanmukhi Mudra / Yoni Mudra): close-up of a face with both hands covering it: thumbs closing the ears, index fingers over the closed eyes, middle fingers beside the nostrils, ring and little fingers above and below the lips. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "khechari-mudra",
+    "nome": "Língua no palato",
+    "sanscrito": "Khechari Mudra (forma simples)",
+    "ficheiro": "khechari-mudra.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. Hand/face detail of a woman practicing yoga. Pose: Tongue lock (Khechari Mudra (forma simples)): close-up of a calm face in three-quarter view, eyes closed, lips closed, subtle inner focus. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "mula-bandha",
+    "nome": "Fecho da raiz",
+    "sanscrito": "Mula Bandha",
+    "ficheiro": "mula-bandha.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Root lock (Mula Bandha): sitting cross-legged on a cushion with a tall spine, hands on the knees, grounded and composed, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "uddiyana-bandha",
+    "nome": "Fecho abdominal",
+    "sanscrito": "Uddiyana Bandha",
+    "ficheiro": "uddiyana-bandha.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Abdominal lock (Uddiyana Bandha): standing with knees slightly bent, hands pressing on the thighs, torso leaning forward, abdomen drawn deeply in and up under the ribs, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "jalandhara-bandha",
+    "nome": "Fecho da garganta",
+    "sanscrito": "Jalandhara Bandha",
+    "ficheiro": "jalandhara-bandha.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Throat lock (Jalandhara Bandha): sitting cross-legged, chin drawn down toward the notch of the collarbones, chest lifted, hands on the knees, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "rotacoes-pescoco",
+    "nome": "Rotações do pescoço",
+    "sanscrito": "Griva Sanchalana",
+    "ficheiro": "rotacoes-pescoco.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Neck rolls (Griva Sanchalana): sitting cross-legged, head tilted gently to one side in a slow neck roll, shoulders relaxed, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "rotacoes-ombros",
+    "nome": "Rotações dos ombros",
+    "sanscrito": "Skandha Chakra",
+    "ficheiro": "rotacoes-ombros.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Shoulder rolls (Skandha Chakra): standing, fingertips resting on the shoulders, elbows drawing circles, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "circulos-ancas",
+    "nome": "Círculos de ancas",
+    "sanscrito": "Kati Chakrasana (prep.)",
+    "ficheiro": "circulos-ancas.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Hip circles (Kati Chakrasana (prep.)): standing with feet hip-width apart, hands on the hips, hips circling, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "rotacoes-tornozelos",
+    "nome": "Rotações de tornozelos e pulsos",
+    "sanscrito": "Goolf Chakra / Manibandha Chakra",
+    "ficheiro": "rotacoes-tornozelos.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Ankle & wrist rotations (Goolf Chakra / Manibandha Chakra): sitting on the mat with legs extended, rotating one lifted ankle, hands resting beside the hips, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "tiryaka-tadasana",
+    "nome": "Palmeira oscilante",
+    "sanscrito": "Tiryaka Tadasana",
+    "ficheiro": "tiryaka-tadasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Swaying palm tree (Tiryaka Tadasana): standing with feet apart, arms stretched overhead with fingers interlaced, bending the trunk to one side, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "kati-chakrasana",
+    "nome": "Rotação da cintura",
+    "sanscrito": "Kati Chakrasana",
+    "ficheiro": "kati-chakrasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Waist rotating pose (Kati Chakrasana): standing with feet apart, twisting the trunk to one side with arms swinging loosely around the body, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "chakki-chalanasana",
+    "nome": "Moinho (moer o grão)",
+    "sanscrito": "Chakki Chalanasana",
+    "ficheiro": "chakki-chalanasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Churning the mill (Chakki Chalanasana): sitting with legs wide apart, arms extended forward with hands clasped, circling the trunk as if churning a mill, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "marjaryasana-bitilasana",
+    "nome": "Gato–Vaca",
+    "sanscrito": "Marjaryasana–Bitilasana",
+    "ficheiro": "marjaryasana-bitilasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Cat–Cow (Marjaryasana–Bitilasana): on hands and knees with the spine rounded upward and the head tucked (cat pose), seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "vyaghrasana",
+    "nome": "Postura do Tigre",
+    "sanscrito": "Vyaghrasana",
+    "ficheiro": "vyaghrasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Tiger pose (Vyaghrasana): on hands and knees, one leg lifted and stretched back with the knee bent and the toes toward the head, head lifted, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "balasana",
+    "nome": "Postura da Criança",
+    "sanscrito": "Balasana",
+    "ficheiro": "balasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Child's pose (Balasana): kneeling with the forehead on the mat, hips resting on the heels, arms stretched forward, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "uttana-shishosana",
+    "nome": "Cachorro estendido",
+    "sanscrito": "Uttana Shishosana",
+    "ficheiro": "uttana-shishosana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Extended puppy pose (Uttana Shishosana): kneeling with the hips above the knees, arms stretched far forward and the chest melting toward the mat, forehead down, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "surya-namaskar",
+    "nome": "Saudação ao Sol (ronda completa)",
+    "sanscrito": "Surya Namaskar",
+    "ficheiro": "surya-namaskar.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Sun Salutation (full round) (Surya Namaskar): standing tall at the front of the mat with palms together at the heart, a soft rising sun behind her, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "pranamasana",
+    "nome": "Postura da Prece (de pé)",
+    "sanscrito": "Pranamasana",
+    "ficheiro": "pranamasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Prayer pose (Pranamasana): standing with feet together, palms pressed together at the chest, eyes softly closed, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "tadasana",
+    "nome": "Postura da Montanha",
+    "sanscrito": "Tadasana",
+    "ficheiro": "tadasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Mountain pose (Tadasana): standing tall with feet together, arms relaxed at the sides with palms facing forward, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "urdhva-hastasana",
+    "nome": "Braços erguidos",
+    "sanscrito": "Urdhva Hastasana / Hasta Uttanasana",
+    "ficheiro": "urdhva-hastasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Upward salute (Urdhva Hastasana / Hasta Uttanasana): standing with arms raised straight overhead, palms facing each other, slight lift of the chest and gaze up, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "uttanasana",
+    "nome": "Flexão à frente de pé",
+    "sanscrito": "Uttanasana / Padahastasana",
+    "ficheiro": "uttanasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Standing forward bend (Uttanasana / Padahastasana): standing forward fold with straight legs, torso hanging over the legs, hands on the floor beside the feet, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "ardha-uttanasana",
+    "nome": "Meia flexão à frente",
+    "sanscrito": "Ardha Uttanasana",
+    "ficheiro": "ardha-uttanasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Half forward bend (Ardha Uttanasana): standing with a flat back parallel to the floor, fingertips on the shins, neck long, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "ashwa-sanchalanasana",
+    "nome": "Postura do Cavaleiro (lunge baixo)",
+    "sanscrito": "Ashwa Sanchalanasana",
+    "ficheiro": "ashwa-sanchalanasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Equestrian / low lunge (Ashwa Sanchalanasana): low lunge with the front knee bent over the ankle, back knee on the mat, fingertips on the floor beside the front foot, chest lifted, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "anjaneyasana",
+    "nome": "Postura da Lua Crescente",
+    "sanscrito": "Anjaneyasana",
+    "ficheiro": "anjaneyasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Crescent lunge (Anjaneyasana): low lunge with the back knee on the mat, front knee bent, arms raised overhead, chest open, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "phalakasana",
+    "nome": "Postura da Prancha",
+    "sanscrito": "Phalakasana / Kumbhakasana",
+    "ficheiro": "phalakasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Plank pose (Phalakasana / Kumbhakasana): plank position on hands and toes, body in one straight line, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "chaturanga-dandasana",
+    "nome": "Prancha baixa (Bastão de quatro apoios)",
+    "sanscrito": "Chaturanga Dandasana",
+    "ficheiro": "chaturanga-dandasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Four-limbed staff pose (Chaturanga Dandasana): low plank with elbows bent to ninety degrees hugging the ribs, body straight and hovering just above the mat, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "ashtanga-namaskara",
+    "nome": "Saudação com oito pontos",
+    "sanscrito": "Ashtanga Namaskara",
+    "ficheiro": "ashtanga-namaskara.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Eight-limbed salutation (Ashtanga Namaskara): knees, chest and chin on the mat with the hips lifted, elbows bent close to the ribs, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "bhujangasana",
+    "nome": "Postura da Cobra",
+    "sanscrito": "Bhujangasana",
+    "ficheiro": "bhujangasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Cobra pose (Bhujangasana): lying prone with the chest lifted, hands under the shoulders, elbows bent, legs and pelvis on the mat, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "urdhva-mukha-svanasana",
+    "nome": "Cão a olhar para cima",
+    "sanscrito": "Urdhva Mukha Svanasana",
+    "ficheiro": "urdhva-mukha-svanasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Upward-facing dog (Urdhva Mukha Svanasana): upward-facing dog: straight arms, open chest, thighs and knees lifted off the mat, tops of the feet pressing down, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "adho-mukha-svanasana",
+    "nome": "Cão a olhar para baixo",
+    "sanscrito": "Adho Mukha Svanasana",
+    "ficheiro": "adho-mukha-svanasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Downward-facing dog (Adho Mukha Svanasana): downward-facing dog: hands and feet on the mat, hips high, body forming an inverted V, head between the arms, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "utkatasana",
+    "nome": "Postura da Cadeira",
+    "sanscrito": "Utkatasana",
+    "ficheiro": "utkatasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Chair pose (Utkatasana): chair pose: knees bent as if sitting, weight in the heels, arms raised overhead, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "virabhadrasana-1",
+    "nome": "Guerreiro I",
+    "sanscrito": "Virabhadrasana I",
+    "ficheiro": "virabhadrasana-1.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Warrior I (Virabhadrasana I): warrior I: front knee bent, back leg straight with the foot turned slightly out, hips facing forward, arms overhead, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "virabhadrasana-2",
+    "nome": "Guerreiro II",
+    "sanscrito": "Virabhadrasana II",
+    "ficheiro": "virabhadrasana-2.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Warrior II (Virabhadrasana II): warrior II: legs wide, front knee bent over the ankle, arms extended parallel to the floor, gaze over the front hand, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "trikonasana",
+    "nome": "Postura do Triângulo",
+    "sanscrito": "Utthita Trikonasana",
+    "ficheiro": "trikonasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Triangle pose (Utthita Trikonasana): triangle pose: legs wide and straight, torso tilted sideways over the front leg, lower hand on the shin, upper arm reaching to the sky, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "utthita-parsvakonasana",
+    "nome": "Ângulo lateral estendido",
+    "sanscrito": "Utthita Parsvakonasana",
+    "ficheiro": "utthita-parsvakonasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Extended side angle (Utthita Parsvakonasana): extended side angle: front knee bent, lower hand on the floor beside the front foot, upper arm extended over the ear in one line with the back leg, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "parsvottanasana",
+    "nome": "Postura da Pirâmide",
+    "sanscrito": "Parsvottanasana",
+    "ficheiro": "parsvottanasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Pyramid pose / intense side stretch (Parsvottanasana): pyramid pose: feet in a short stance, legs straight, torso folding over the front leg, hands on the floor on either side of the front foot, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "parivrtta-trikonasana",
+    "nome": "Triângulo invertido",
+    "sanscrito": "Parivrtta Trikonasana",
+    "ficheiro": "parivrtta-trikonasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Revolved triangle (Parivrtta Trikonasana): revolved triangle: legs straight and wide, torso twisted with one hand on the floor outside the front foot and the other arm reaching up, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "prasarita-padottanasana",
+    "nome": "Flexão com pernas afastadas",
+    "sanscrito": "Prasarita Padottanasana",
+    "ficheiro": "prasarita-padottanasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Wide-legged forward bend (Prasarita Padottanasana): wide-legged forward fold: feet wide and parallel, torso folding down with hands on the floor between the feet, crown toward the mat, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "malasana",
+    "nome": "Postura da Grinalda (agachamento)",
+    "sanscrito": "Malasana",
+    "ficheiro": "malasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Garland pose / yogi squat (Malasana): deep squat with feet flat, knees wide, elbows pressing the inner knees, palms together at the heart, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "vrksasana",
+    "nome": "Postura da Árvore",
+    "sanscrito": "Vrksasana",
+    "ficheiro": "vrksasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Tree pose (Vrksasana): tree pose: standing on one leg, the other foot pressed to the inner thigh, palms together overhead, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "utthita-hasta-padangusthasana",
+    "nome": "Mão ao dedo grande do pé (de pé)",
+    "sanscrito": "Utthita Hasta Padangusthasana",
+    "ficheiro": "utthita-hasta-padangusthasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Extended hand-to-big-toe pose (Utthita Hasta Padangusthasana): standing on one leg, the other leg extended forward with the hand holding the big toe, spine tall, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "garudasana",
+    "nome": "Postura da Águia",
+    "sanscrito": "Garudasana",
+    "ficheiro": "garudasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Eagle pose (Garudasana): eagle pose: standing with one leg wrapped around the other, arms entwined in front with palms together, slight squat, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "virabhadrasana-3",
+    "nome": "Guerreiro III",
+    "sanscrito": "Virabhadrasana III",
+    "ficheiro": "virabhadrasana-3.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Warrior III (Virabhadrasana III): warrior III: balancing on one leg, torso and lifted back leg parallel to the floor, arms stretched forward, body in a T, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "natarajasana",
+    "nome": "Postura do Dançarino",
+    "sanscrito": "Natarajasana",
+    "ficheiro": "natarajasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Dancer pose (Natarajasana): dancer pose: standing on one leg, the other foot held behind by the hand and lifted, free arm reaching forward, chest open, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "ardha-chandrasana",
+    "nome": "Postura da Meia Lua",
+    "sanscrito": "Ardha Chandrasana",
+    "ficheiro": "ardha-chandrasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Half moon pose (Ardha Chandrasana): half moon pose: balancing on one leg with the lower hand on the floor, lifted leg parallel to the floor, upper arm pointing to the sky, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "vasisthasana",
+    "nome": "Prancha lateral",
+    "sanscrito": "Vasisthasana",
+    "ficheiro": "vasisthasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Side plank (Vasisthasana): side plank: balancing on one hand and the edge of the foot, body in a straight diagonal line, top arm pointing up, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "bakasana",
+    "nome": "Postura do Corvo",
+    "sanscrito": "Bakasana / Kakasana",
+    "ficheiro": "bakasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Crow pose (Bakasana / Kakasana): crow pose: squatting on the hands with the knees resting on the upper arms, feet lifted off the floor, gaze forward, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "mayurasana",
+    "nome": "Postura do Pavão",
+    "sanscrito": "Mayurasana",
+    "ficheiro": "mayurasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Peacock pose (Mayurasana): peacock pose: body balanced horizontally on the hands with the elbows pressing into the belly, legs extended back, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "sukhasana",
+    "nome": "Postura Fácil",
+    "sanscrito": "Sukhasana",
+    "ficheiro": "sukhasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Easy pose (Sukhasana): easy cross-legged seat, hands resting on the knees, tall relaxed spine, seen from behind. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "padmasana",
+    "nome": "Postura de Lótus",
+    "sanscrito": "Padmasana",
+    "ficheiro": "padmasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Lotus pose (Padmasana): full lotus: sitting with each foot on the opposite thigh, hands on the knees with index finger and thumb touching, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "siddhasana",
+    "nome": "Postura do Adepto",
+    "sanscrito": "Siddhasana",
+    "ficheiro": "siddhasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Accomplished pose / adept pose (Siddhasana): sitting with one heel pressed against the perineum and the other heel in front of it, hands on the knees, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "ardha-padmasana",
+    "nome": "Meio Lótus",
+    "sanscrito": "Ardha Padmasana",
+    "ficheiro": "ardha-padmasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Half lotus (Ardha Padmasana): half lotus: one foot resting on the opposite thigh, the other foot under the opposite knee, hands on the knees, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "svastikasana",
+    "nome": "Postura Auspiciosa",
+    "sanscrito": "Svastikasana",
+    "ficheiro": "svastikasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Auspicious pose (Svastikasana): sitting cross-legged with each foot tucked between the thigh and calf of the opposite leg, hands on the knees, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "vajrasana",
+    "nome": "Postura do Diamante",
+    "sanscrito": "Vajrasana",
+    "ficheiro": "vajrasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Thunderbolt pose (Vajrasana): kneeling and sitting on the heels with a tall spine, hands resting on the thighs, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "simhasana",
+    "nome": "Postura do Leão",
+    "sanscrito": "Simhasana",
+    "ficheiro": "simhasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Lion pose (Simhasana): lion pose: kneeling, hands on the knees with fingers spread, mouth wide open with the tongue extended, eyes looking up, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "virasana",
+    "nome": "Postura do Herói",
+    "sanscrito": "Virasana",
+    "ficheiro": "virasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Hero pose (Virasana): hero pose: kneeling with the buttocks on the floor between the heels, hands on the thighs, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "dandasana",
+    "nome": "Postura do Bastão",
+    "sanscrito": "Dandasana",
+    "ficheiro": "dandasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Staff pose (Dandasana): staff pose: sitting with the legs extended together, feet flexed, hands pressing the floor beside the hips, spine tall, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "baddha-konasana",
+    "nome": "Postura da Borboleta",
+    "sanscrito": "Baddha Konasana",
+    "ficheiro": "baddha-konasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Bound angle / butterfly (Baddha Konasana): butterfly pose: sitting with the soles of the feet together, knees open, hands holding the feet, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "upavistha-konasana",
+    "nome": "Ângulo sentado (pernas afastadas)",
+    "sanscrito": "Upavistha Konasana",
+    "ficheiro": "upavistha-konasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Wide-angle seated forward bend (Upavistha Konasana): seated with the legs wide apart, torso folding forward with the hands on the floor, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "gomukhasana",
+    "nome": "Postura da Cara de Vaca",
+    "sanscrito": "Gomukhasana",
+    "ficheiro": "gomukhasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Cow face pose (Gomukhasana): cow face pose: sitting with the knees stacked, one arm reaching over the shoulder and the other from below with the hands clasped behind the back, seen from behind. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "eka-pada-rajakapotasana",
+    "nome": "Postura do Pombo",
+    "sanscrito": "Eka Pada Rajakapotasana (prep.)",
+    "ficheiro": "eka-pada-rajakapotasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Pigeon pose (Eka Pada Rajakapotasana (prep.)): pigeon pose: front shin on the mat, back leg extended behind, torso upright with the hands on the floor, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "ardha-hanumanasana",
+    "nome": "Meia espargata",
+    "sanscrito": "Ardha Hanumanasana",
+    "ficheiro": "ardha-hanumanasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Half splits (Ardha Hanumanasana): half splits: kneeling on one knee with the front leg extended and the heel on the floor, torso folding over the front leg, hands on the floor, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "hanumanasana",
+    "nome": "Postura do Macaco (espargata)",
+    "sanscrito": "Hanumanasana",
+    "ficheiro": "hanumanasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Monkey pose / front splits (Hanumanasana): front splits: one leg extended forward and the other back, hips square, hands in prayer at the heart, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "parighasana",
+    "nome": "Postura do Portão",
+    "sanscrito": "Parighasana",
+    "ficheiro": "parighasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Gate pose (Parighasana): gate pose: kneeling on one knee with the other leg extended to the side, torso bending sideways over the extended leg, upper arm reaching overhead, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "paschimottanasana",
+    "nome": "Flexão à frente sentada",
+    "sanscrito": "Paschimottanasana",
+    "ficheiro": "paschimottanasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Seated forward bend (Paschimottanasana): seated forward bend: legs extended, torso folding over the legs, hands holding the feet, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "janu-sirsasana",
+    "nome": "Cabeça ao joelho",
+    "sanscrito": "Janu Sirsasana",
+    "ficheiro": "janu-sirsasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Head-to-knee pose (Janu Sirsasana): head-to-knee pose: one leg extended, the other foot against the inner thigh, torso folding over the straight leg, hands at the foot, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "yoga-mudrasana",
+    "nome": "Postura do Selo (Yoga Mudra)",
+    "sanscrito": "Yoga Mudrasana",
+    "ficheiro": "yoga-mudrasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Psychic union pose (Yoga Mudrasana): sitting cross-legged and folding forward with the forehead toward the mat and the hands clasped behind the back, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "kurmasana",
+    "nome": "Postura da Tartaruga",
+    "sanscrito": "Kurmasana",
+    "ficheiro": "kurmasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Tortoise pose (Kurmasana): tortoise pose: sitting with the legs wide, torso folded forward with the arms sliding under the knees out to the sides, chest close to the floor, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "shashankasana",
+    "nome": "Postura da Lebre",
+    "sanscrito": "Shashankasana",
+    "ficheiro": "shashankasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Hare pose (Shashankasana): hare pose: kneeling and folding forward with the forehead on the mat and the arms extended, hips on the heels, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "salamba-bhujangasana",
+    "nome": "Postura da Esfinge",
+    "sanscrito": "Salamba Bhujangasana",
+    "ficheiro": "salamba-bhujangasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Sphinx pose (Salamba Bhujangasana): sphinx pose: lying prone propped on the forearms, elbows under the shoulders, chest lifted, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "salabhasana",
+    "nome": "Postura do Gafanhoto",
+    "sanscrito": "Salabhasana",
+    "ficheiro": "salabhasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Locust pose (Salabhasana): locust pose: lying prone with the chest, arms and legs lifted off the mat, arms alongside the body, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "dhanurasana",
+    "nome": "Postura do Arco",
+    "sanscrito": "Dhanurasana",
+    "ficheiro": "dhanurasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Bow pose (Dhanurasana): bow pose: lying prone, hands holding the ankles, chest and thighs lifted so the body forms a bow, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "ustrasana",
+    "nome": "Postura do Camelo",
+    "sanscrito": "Ustrasana",
+    "ficheiro": "ustrasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Camel pose (Ustrasana): camel pose: kneeling upright with the hips forward, back arching and the hands on the heels, chest open, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "purvottanasana",
+    "nome": "Prancha invertida",
+    "sanscrito": "Purvottanasana",
+    "ficheiro": "purvottanasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Upward plank / reverse plank (Purvottanasana): reverse plank: sitting with the hands behind the hips, lifting the pelvis so the body forms a straight line from shoulders to feet, head gently back, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "setu-bandhasana",
+    "nome": "Postura da Ponte",
+    "sanscrito": "Setu Bandha Sarvangasana",
+    "ficheiro": "setu-bandhasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Bridge pose (Setu Bandha Sarvangasana): bridge pose: lying on the back with the knees bent and feet flat, hips lifted, arms along the body, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "urdhva-dhanurasana",
+    "nome": "Postura da Roda",
+    "sanscrito": "Urdhva Dhanurasana / Chakrasana",
+    "ficheiro": "urdhva-dhanurasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Wheel pose (Urdhva Dhanurasana / Chakrasana): wheel pose: hands and feet on the floor, body arched upward in a full backbend, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "matsyasana",
+    "nome": "Postura do Peixe",
+    "sanscrito": "Matsyasana",
+    "ficheiro": "matsyasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Fish pose (Matsyasana): fish pose: lying on the back with the chest lifted and the crown of the head resting on the floor, forearms on the mat, legs extended, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "ardha-matsyendrasana",
+    "nome": "Meia torção espinal",
+    "sanscrito": "Ardha Matsyendrasana",
+    "ficheiro": "ardha-matsyendrasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Half lord of the fishes (Ardha Matsyendrasana): seated spinal twist: one knee bent upright with the foot outside the opposite thigh, the other leg folded, torso twisting toward the raised knee with the opposite elbow outside it, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "marichyasana-3",
+    "nome": "Postura do Sábio Marichi III",
+    "sanscrito": "Marichyasana III",
+    "ficheiro": "marichyasana-3.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Marichi's pose III (seated twist) (Marichyasana III): seated twist with one leg extended and the other knee bent with the foot flat, torso twisting toward the bent knee with the opposite arm hooking it, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "supta-matsyendrasana",
+    "nome": "Torção deitada",
+    "sanscrito": "Supta Matsyendrasana",
+    "ficheiro": "supta-matsyendrasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Supine spinal twist (Supta Matsyendrasana): supine twist: lying on the back with the arms in a T, knees dropped to one side, head turned the other way, seen from above. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "jathara-parivartanasana",
+    "nome": "Torção abdominal deitada",
+    "sanscrito": "Jathara Parivartanasana",
+    "ficheiro": "jathara-parivartanasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Revolved abdomen pose (Jathara Parivartanasana): lying on the back with the arms in a T, straight legs lowered together to one side, shoulders on the floor, seen from above. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "navasana",
+    "nome": "Postura do Barco",
+    "sanscrito": "Navasana",
+    "ficheiro": "navasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Boat pose (Navasana): boat pose: balancing on the sit bones with the legs lifted and straight, torso leaning back, arms extended forward, body forming a V, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "utthanpadasana",
+    "nome": "Pernas elevadas",
+    "sanscrito": "Utthanpadasana",
+    "ficheiro": "utthanpadasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Raised legs pose (Utthanpadasana): lying on the back with both legs lifted straight at about forty-five degrees, arms along the body, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "pavanamuktasana",
+    "nome": "Libertação dos ventos",
+    "sanscrito": "Pavanamuktasana",
+    "ficheiro": "pavanamuktasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Wind-relieving pose (Pavanamuktasana): lying on the back hugging both knees to the chest, head on the mat, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "supta-padangusthasana",
+    "nome": "Mão ao dedo grande do pé (deitado)",
+    "sanscrito": "Supta Padangusthasana",
+    "ficheiro": "supta-padangusthasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Reclining hand-to-big-toe pose (Supta Padangusthasana): lying on the back with one leg raised straight up and the hand holding the big toe, the other leg extended on the floor, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "sucirandhrasana",
+    "nome": "Olho da agulha (figura 4 deitada)",
+    "sanscrito": "Sucirandhrasana",
+    "ficheiro": "sucirandhrasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Eye of the needle / reclined figure four (Sucirandhrasana): lying on the back with one ankle crossed over the opposite knee, hands clasped behind the thigh drawing the legs toward the chest, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "anantasana",
+    "nome": "Postura de Vishnu (deitado de lado)",
+    "sanscrito": "Anantasana",
+    "ficheiro": "anantasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Vishnu's couch / side-reclining leg lift (Anantasana): lying on one side, head propped on the hand, top leg raised straight up with the hand holding the big toe, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "ananda-balasana",
+    "nome": "Postura do Bebé Feliz",
+    "sanscrito": "Ananda Balasana",
+    "ficheiro": "ananda-balasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Happy baby (Ananda Balasana): happy baby pose: lying on the back holding the outer edges of the feet with the knees drawn toward the armpits, shins vertical, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "supta-baddha-konasana",
+    "nome": "Borboleta deitada",
+    "sanscrito": "Supta Baddha Konasana",
+    "ficheiro": "supta-baddha-konasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Reclining bound angle (Supta Baddha Konasana): lying on the back with the soles of the feet together and the knees open to the sides, arms relaxed, seen from the side slightly above. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "sarvangasana",
+    "nome": "Postura da Vela",
+    "sanscrito": "Salamba Sarvangasana",
+    "ficheiro": "sarvangasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Shoulder stand (Salamba Sarvangasana): shoulder stand: lying on the shoulders with the legs straight up to the sky, hands supporting the back, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "halasana",
+    "nome": "Postura do Arado",
+    "sanscrito": "Halasana",
+    "ficheiro": "halasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Plough pose (Halasana): plough pose: lying on the shoulders with the legs extended over the head and the toes touching the floor behind, arms on the floor, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "sirsasana",
+    "nome": "Postura sobre a cabeça",
+    "sanscrito": "Salamba Sirsasana",
+    "ficheiro": "sirsasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Headstand (Salamba Sirsasana): headstand: crown of the head on the mat between the forearms, body straight and vertical, legs together pointing up, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "adho-mukha-vrksasana",
+    "nome": "Pino (equilíbrio sobre as mãos)",
+    "sanscrito": "Adho Mukha Vrksasana",
+    "ficheiro": "adho-mukha-vrksasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Handstand (Adho Mukha Vrksasana): handstand: balancing on straight arms with the body vertical and the legs together, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "pincha-mayurasana",
+    "nome": "Equilíbrio sobre os antebraços",
+    "sanscrito": "Pincha Mayurasana",
+    "ficheiro": "pincha-mayurasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Forearm stand (Pincha Mayurasana): forearm stand: forearms on the mat, body vertical with the legs up, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "viparita-karani",
+    "nome": "Pernas elevadas (na parede)",
+    "sanscrito": "Viparita Karani",
+    "ficheiro": "viparita-karani.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Legs-up-the-wall (Viparita Karani): lying on the back with the legs resting straight up against a wall, arms relaxed at the sides, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "makarasana",
+    "nome": "Postura do Crocodilo",
+    "sanscrito": "Makarasana",
+    "ficheiro": "makarasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Crocodile pose (Makarasana): crocodile pose: lying prone with the forehead resting on crossed forearms, legs relaxed and slightly apart, seen from the side. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "savasana",
+    "nome": "Postura do Cadáver",
+    "sanscrito": "Savasana",
+    "ficheiro": "savasana.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Corpse pose (Savasana): corpse pose: lying on the back with the arms slightly away from the body palms up, feet falling open, eyes closed, seen from above at an angle. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "yoga-nidra",
+    "nome": "Yoga Nidra (relaxamento guiado)",
+    "sanscrito": "Yoga Nidra",
+    "ficheiro": "yoga-nidra.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Yogic sleep (Yoga Nidra): lying on the back in deep relaxation covered with a light blanket, eyes closed, seen from above at an angle. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "meditacao-respiracao",
+    "nome": "Meditação na respiração",
+    "sanscrito": "Dhyana",
+    "ficheiro": "meditacao-respiracao.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Breath meditation (Dhyana): sitting cross-legged in meditation with the eyes closed and the hands resting on the knees, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  },
+  {
+    "id": "encerramento",
+    "nome": "Encerramento e gratidão",
+    "sanscrito": "Namaste",
+    "ficheiro": "encerramento.png",
+    "prompt": "Loose watercolor illustration on a plain white background, soft washes with visible brush strokes, a few light paint splatters, gentle paper texture, soft natural shadows, no outlines, muted natural palette. A woman practicing yoga. Pose: Closing (Namaste): sitting cross-legged with the palms together at the heart and the head slightly bowed, seen from the front. The same woman in every image: slim, light-brown hair tied in a loose ponytail, olive-green sports top and light teal leggings, barefoot, calm expression. Anatomically correct pose with the right number of limbs, full body visible and centered, nothing cropped, no text, no watermark, no logo, no mat pattern, square format."
+  }
+]

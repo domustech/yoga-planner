@@ -2,12 +2,14 @@ import { useSortable } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
 import { Copy, GripVertical, Info, X } from 'lucide-react'
 import { useState, type CSSProperties } from 'react'
+import { getAlinhamento } from '../data/alinhamento'
 import { CATEGORY_MAP } from '../data/categories'
 import { getPose } from '../data/poses'
 import type { ClassItem, ClassPhase } from '../data/types'
 import { useClassStore } from '../store/useClassStore'
+import { AlignmentList } from './AlignmentList'
 import { DurationControl } from './DurationControl'
-import { PoseFigure } from './PoseFigure'
+import { PoseVisual } from './PoseVisual'
 
 interface Props {
   aulaId: string
@@ -43,6 +45,7 @@ export function ClassItemRow({ aulaId, faseId, item, index, fases, onDetails }: 
   }
 
   const cat = CATEGORY_MAP[pose.categorias[0]]
+  const alinhamento = getAlinhamento(pose.id)
   const style = {
     transform: CSS.Transform.toString(transform),
     transition,
@@ -70,7 +73,7 @@ export function ClassItemRow({ aulaId, faseId, item, index, fases, onDetails }: 
         </button>
 
         <div className="item-figure">
-          <PoseFigure figura={pose.figura} chao={false} />
+          <PoseVisual pose={pose} chao={false} />
         </div>
 
         <button type="button" className="item-body" onClick={() => setOpen((o) => !o)} title="Notas e opções">
@@ -128,6 +131,12 @@ export function ClassItemRow({ aulaId, faseId, item, index, fases, onDetails }: 
             <p className="hint">
               <strong>Respiração:</strong> {pose.respiracao}
             </p>
+          )}
+          {alinhamento && (
+            <details className="item-align">
+              <summary>Alinhamento: o que assegurar</summary>
+              <AlignmentList alinhamento={alinhamento} compact />
+            </details>
           )}
         </div>
       )}
