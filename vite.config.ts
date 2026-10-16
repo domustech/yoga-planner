@@ -25,8 +25,8 @@ export default defineConfig(({ mode }) => ({
         short_name: 'Yoga Planner',
         description: 'Planeamento e desenho de aulas de Hatha Yoga para instrutores.',
         lang: 'pt-PT',
-        theme_color: '#6b5b95',
-        background_color: '#f6f3ee',
+        theme_color: '#6f9270',
+        background_color: '#f8f4ef',
         display: 'standalone',
         orientation: 'any',
         icons: [

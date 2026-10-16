@@ -1,8 +1,13 @@
 # Ilustrações das posturas (aquarela)
 
-A app mostra, para cada postura, uma ilustração em aquarela quando ela existe em
-`public/poses/<id>.webp`; caso contrário usa a figura esquemática gerada por SVG.
-Assim é possível ir substituindo as figuras pelas ilustrações aos poucos.
+Ao abrir o detalhe de uma postura, a app mostra uma ilustração em aquarela **gerada por ela própria**
+a partir das articulações da postura (componente `WatercolorFigure`): a mesma personagem em todas,
+com manchas, salpicos e grão de papel. Nos cartões e no editor continuam a usar-se as figuras
+esquemáticas de linha.
+
+Se existir uma imagem própria em `public/poses/<id>.webp` (por exemplo pintada por um gerador de
+imagens a partir dos prompts abaixo), ela substitui a aquarela gerada no detalhe. Para exportar as
+aquarelas geradas em PNG: `node scripts/render-watercolor.mjs <pasta> [--por-postura]`.
 
 Estilo de referência: aguarela solta, fundo branco, salpicos leves de tinta, a mesma personagem
 em todas as imagens (cabelo castanho-claro apanhado, top verde-azeitona, leggings azul-esverdeadas).

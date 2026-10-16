@@ -23,7 +23,7 @@ const CARD_W = (CONTENT_W - GAP * (COLS - 1)) / COLS
 const CARD_PAD = 2.5
 const FIG = 24
 
-const PRIMARY: RGB = [107, 91, 149]
+const PRIMARY: RGB = [111, 146, 112]
 const TEXT: RGB = [42, 39, 51]
 const MUTED: RGB = [113, 108, 125]
 const BORDER: RGB = [227, 220, 209]

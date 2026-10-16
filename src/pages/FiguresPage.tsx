@@ -1,12 +1,13 @@
 import type { CSSProperties } from 'react'
+import { PoseIllustration } from '../components/PoseIllustration'
 import { hasPoseImage, PoseVisual } from '../components/PoseVisual'
 import { CATEGORY_MAP } from '../data/categories'
 import { POSES } from '../data/poses'
 
 /**
  * Página de revisão das ilustrações (rota /figuras, não aparece no menu).
- * Mostra a ilustração em aquarela quando existe e a figura esquemática quando não,
- * com a etiqueta "sem imagem" — útil para acompanhar a substituição das figuras.
+ * Mostra a aquarela de cada postura (gerada, ou a imagem própria quando existe)
+ * e, em miniatura, a figura esquemática usada nos cartões.
  */
 export function FiguresPage() {
   const comImagem = POSES.filter((p) => hasPoseImage(p.id)).length
@@ -16,20 +17,23 @@ export function FiguresPage() {
         <div>
           <h1>Revisão das ilustrações</h1>
           <p className="muted">
-            {comImagem} de {POSES.length} posturas com ilustração em aquarela; as restantes usam a figura esquemática.
-            Ver <code>docs/imagens/README.md</code> para gerar e importar imagens.
+            Aquarelas geradas a partir das articulações de cada postura; {comImagem} de {POSES.length} têm imagem própria
+            (etiqueta "imagem"), que substitui a gerada. As miniaturas são as figuras esquemáticas dos cartões.
           </p>
         </div>
       </header>
-      <div className="figures-grid">
+      <div className="figures-grid figures-grid-wc">
         {POSES.map((p) => {
           const cat = CATEGORY_MAP[p.categorias[0]]
-          const falta = !hasPoseImage(p.id)
+          const propria = hasPoseImage(p.id)
           return (
-            <div key={p.id} className={`figure-tile ${falta ? 'sem-imagem' : ''}`} style={{ '--cat': cat.cor } as CSSProperties}>
-              <div className="figure-tile-img">
-                <PoseVisual pose={p} title={p.nome} />
-                {falta && <span className="falta">sem imagem</span>}
+            <div key={p.id} className="figure-tile" style={{ '--cat': cat.cor } as CSSProperties}>
+              <div className="figure-tile-img figure-tile-wc">
+                <PoseIllustration pose={p} title={p.nome} />
+                {propria && <span className="falta tem">imagem</span>}
+                <span className="figure-tile-mini">
+                  <PoseVisual pose={p} chao={false} />
+                </span>
               </div>
               <strong>{p.nome}</strong>
               <em>{p.sanscrito}</em>

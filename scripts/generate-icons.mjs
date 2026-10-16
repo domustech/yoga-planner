@@ -14,7 +14,7 @@ const FIGURE = `
   </g>`
 
 const svg = (rounded) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="${rounded ? 112 : 0}" fill="#6b5b95"/>${FIGURE}
+  <rect width="512" height="512" rx="${rounded ? 112 : 0}" fill="#6f9270"/>${FIGURE}
 </svg>`
 
 await mkdir('public/icons', { recursive: true })

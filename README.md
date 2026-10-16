@@ -75,11 +75,14 @@ Notas:
 - **Saber** (rota `/saber`): conhecimento de apoio para meditações e conversas com alunos: caminhos do Yoga,
   os oito membros e sutras essenciais de Patanjali, Vedanta básico (na linha de Swami Dayananda Saraswati),
   chakras ligados à biblioteca, roteiros de meditação e glossário, com pesquisa.
-- **Ilustrações em aquarela**: cada postura pode ter uma ilustração em `public/poses/<id>.webp` (estilo aguarela,
-  mesma personagem em todas); quando não existe, a app mostra a figura esquemática gerada por SVG a partir das
-  articulações. As ilustrações aparecem nos cartões, no editor, no detalhe, na impressão e no PDF. O fluxo para
-  gerar e importar as imagens está em [`docs/imagens/README.md`](docs/imagens/README.md)
-  (`npm run imagens:prompts` e `npm run imagens:importar -- <pasta>`); a página `/figuras` mostra o que falta.
+- **Duas ilustrações por postura**: nos cartões, no editor, na impressão e no PDF usa-se a figura esquemática
+  ("boneco de linha") gerada por SVG a partir das articulações; ao abrir o detalhe de uma postura aparece uma
+  **ilustração em aquarela** gerada pela app a partir da mesma geometria (`WatercolorFigure`): a mesma personagem
+  em todas (cabelo apanhado, top verde-sálvia, leggings verde-água), com manchas, salpicos e grão de papel em
+  tons pastel. Se existir uma imagem própria em `public/poses/<id>.webp`, ela substitui a aquarela gerada; o fluxo
+  para criar e importar imagens está em [`docs/imagens/README.md`](docs/imagens/README.md). A página `/figuras`
+  mostra todas as aquarelas e `node scripts/render-watercolor.mjs <pasta>` exporta-as em PNG (folhas de contacto
+  ou, com `--por-postura`, uma imagem por postura).
 - **Alinhamento**: ao clicar numa postura, a secção "Alinhamento — o que a postura deve assegurar" lista as
   indicações parte a parte (pés, pernas, joelhos, ancas, coluna, peito, ombros, braços, mãos, cabeça, olhar,
   respiração, atenção) e os erros comuns, para todas as 123 posturas e práticas (`src/data/alinhamento/`).
