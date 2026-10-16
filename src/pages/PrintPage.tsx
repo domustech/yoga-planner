@@ -2,6 +2,7 @@ import { ArrowLeft, Printer } from 'lucide-react'
 import type { CSSProperties } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { ClassTimeline } from '../components/ClassTimeline'
+import { ExportPdfButton } from '../components/ExportPdfButton'
 import { PoseFigure } from '../components/PoseFigure'
 import { CATEGORY_MAP, LEVEL_LABEL } from '../data/categories'
 import { getPose } from '../data/poses'
@@ -31,9 +32,12 @@ export function PrintPage() {
         <Link to={`/aula/${aula.id}`} className="btn">
           <ArrowLeft size={16} /> Voltar ao editor
         </Link>
-        <button type="button" className="btn primary" onClick={() => window.print()}>
-          <Printer size={16} /> Imprimir / Guardar PDF
-        </button>
+        <div className="print-toolbar-actions">
+          <ExportPdfButton aula={aula} label="Descarregar PDF" />
+          <button type="button" className="btn primary" onClick={() => window.print()}>
+            <Printer size={16} /> Imprimir
+          </button>
+        </div>
       </div>
 
       <header className="print-header">

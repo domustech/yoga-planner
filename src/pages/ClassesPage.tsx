@@ -2,6 +2,7 @@ import { Copy, Download, FilePlus2, Layers, Plus, Trash2, Upload } from 'lucide-
 import { useRef, type ChangeEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ClassTimeline } from '../components/ClassTimeline'
+import { ExportPdfButton } from '../components/ExportPdfButton'
 import { LEVEL_LABEL } from '../data/categories'
 import type { YogaClass } from '../data/types'
 import { classDuration, classItemCount, downloadJson, formatDate, formatDurationLong, slugify } from '../lib/utils'
@@ -114,10 +115,11 @@ export function ClassesPage() {
                   >
                     <Copy size={16} />
                   </button>
+                  <ExportPdfButton aula={aula} variant="icon" />
                   <button
                     type="button"
                     className="icon-btn"
-                    title="Exportar (JSON)"
+                    title="Exportar JSON (cópia de segurança)"
                     onClick={() => downloadJson(`${slugify(aula.nome) || 'aula'}.json`, aula)}
                   >
                     <Download size={16} />

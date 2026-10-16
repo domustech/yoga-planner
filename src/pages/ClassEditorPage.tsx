@@ -17,6 +17,7 @@ import { ArrowLeft, BookOpen, Download, Plus, Printer } from 'lucide-react'
 import { useCallback, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { ClassTimeline } from '../components/ClassTimeline'
+import { ExportPdfButton } from '../components/ExportPdfButton'
 import { LibraryPanel } from '../components/LibraryPanel'
 import { PhaseSection } from '../components/PhaseSection'
 import { PoseCard } from '../components/PoseCard'
@@ -176,8 +177,14 @@ export function ClassEditorPage() {
             <Link className="btn" to={`/aula/${aula.id}/imprimir`}>
               <Printer size={16} /> Imprimir
             </Link>
-            <button type="button" className="btn" onClick={exportar}>
-              <Download size={16} /> Exportar
+            <ExportPdfButton aula={aula} label="PDF" />
+            <button
+              type="button"
+              className="btn"
+              onClick={exportar}
+              title="Exportar em JSON (cópia de segurança ou para importar noutro dispositivo)"
+            >
+              <Download size={16} /> JSON
             </button>
           </div>
         </header>

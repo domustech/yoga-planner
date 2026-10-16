@@ -41,6 +41,8 @@ Em Android (Chrome): menu ⋮ → **Instalar aplicação**.
 Notas:
 - Os dados (aulas) ficam guardados no próprio dispositivo; a app instalada no iPhone não partilha dados
   com o browser do computador. Use **Exportar / Importar** para passar aulas entre dispositivos.
+- Para imprimir a partir do iPhone use o botão **PDF** e escolha **Imprimir** na folha de partilha
+  (a impressão direta do browser não funciona na app instalada no ecrã principal).
 - Em ecrãs estreitos, arrastar da biblioteca para as fases não está disponível: use o botão **+** de cada
   postura (adiciona à fase selecionada). Dentro de uma fase, arraste pela pega ⋮⋮ com toque longo.
 - Para pré-visualizar localmente a build tal como fica no Pages: `npm run build:pages && npm run preview:pages`
@@ -69,7 +71,12 @@ Notas:
 - **Editor**: arrastar e largar da biblioteca para as fases, reordenar dentro da fase, mover entre fases,
   duração por postura (m:ss, botões ±15 s), indicação de posturas bilaterais, notas por postura,
   barra cronológica colorida por categoria e comparação com a duração alvo.
-- **Impressão / PDF**: vista limpa da aula com as figuras, pronta para imprimir (`Imprimir` no editor).
+- **Exportar PDF**: o botão **PDF** (no editor, na lista de aulas e na vista de impressão) gera no próprio
+  dispositivo um PDF A4 com cabeçalho, barra cronológica e, por fase, os cartões das posturas com as figuras
+  em vetor, durações e notas. No iPhone/iPad abre a folha de partilha (Imprimir, Guardar em Ficheiros, Mail,
+  AirDrop…); no computador descarrega o ficheiro. Código em `src/lib/pdf/classPdf.ts` (jsPDF, carregado só
+  quando é preciso); `npm run pdf:smoke` gera um PDF de exemplo para rever o layout.
+- **Impressão**: vista limpa da aula com as figuras (`Imprimir` no editor) para imprimir diretamente do browser.
 - Funciona em desktop e tablet; em ecrãs estreitos a biblioteca abre como painel lateral.
 
 ## Estrutura do código
