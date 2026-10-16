@@ -1,7 +1,8 @@
-import { Copy, Download, FilePlus2, Layers, Plus, Trash2, Upload } from 'lucide-react'
-import { useRef, type ChangeEvent } from 'react'
+import { Copy, Download, FilePlus2, Layers, Plus, Trash2, Upload, Wand2 } from 'lucide-react'
+import { useRef, useState, type ChangeEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ClassTimeline } from '../components/ClassTimeline'
+import { ClassWizard } from '../components/ClassWizard'
 import { ExportPdfButton } from '../components/ExportPdfButton'
 import { LEVEL_LABEL } from '../data/categories'
 import type { YogaClass } from '../data/types'
@@ -14,8 +15,10 @@ export function ClassesPage() {
   const duplicarAula = useClassStore((s) => s.duplicarAula)
   const apagarAula = useClassStore((s) => s.apagarAula)
   const importarAula = useClassStore((s) => s.importarAula)
+  const adicionarAula = useClassStore((s) => s.adicionarAula)
   const navigate = useNavigate()
   const fileRef = useRef<HTMLInputElement>(null)
+  const [wizardOpen, setWizardOpen] = useState(false)
 
   const novaAula = () => {
     const id = criarAula()
@@ -62,8 +65,11 @@ export function ClassesPage() {
             <Upload size={16} /> Importar
           </button>
           <input ref={fileRef} type="file" accept="application/json,.json" hidden onChange={onImport} />
-          <button type="button" className="btn primary" onClick={novaAula}>
+          <button type="button" className="btn" onClick={novaAula}>
             <Plus size={16} /> Nova aula
+          </button>
+          <button type="button" className="btn primary" onClick={() => setWizardOpen(true)}>
+            <Wand2 size={16} /> Criar aula automática
           </button>
         </div>
       </header>
@@ -73,9 +79,14 @@ export function ClassesPage() {
           <FilePlus2 size={36} />
           <h2>Ainda não tem aulas</h2>
           <p>Crie a sua primeira aula: ela começa com a estrutura clássica de uma aula de Hatha Yoga.</p>
-          <button type="button" className="btn primary" onClick={novaAula}>
-            <Plus size={16} /> Criar aula
-          </button>
+          <div className="page-actions">
+            <button type="button" className="btn" onClick={novaAula}>
+              <Plus size={16} /> Aula em branco
+            </button>
+            <button type="button" className="btn primary" onClick={() => setWizardOpen(true)}>
+              <Wand2 size={16} /> Criar aula automática
+            </button>
+          </div>
         </div>
       ) : (
         <div className="class-grid">
@@ -140,6 +151,16 @@ export function ClassesPage() {
           })}
         </div>
       )}
+
+      <ClassWizard
+        open={wizardOpen}
+        onClose={() => setWizardOpen(false)}
+        onCreate={(aula) => {
+          const id = adicionarAula(aula)
+          setWizardOpen(false)
+          navigate(`/aula/${id}`)
+        }}
+      />
     </div>
   )
 }

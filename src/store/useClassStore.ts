@@ -15,6 +15,8 @@ interface ClassState {
   apagarAula: (id: string) => void
   atualizarAula: (id: string, patch: Partial<Omit<YogaClass, 'id' | 'fases'>>) => void
   importarAula: (aula: YogaClass) => string
+  /** Adiciona uma aula já construída (ex.: gerada pelo wizard) e devolve o id. */
+  adicionarAula: (aula: YogaClass) => string
 
   adicionarFase: (aulaId: string, nome: string, categorias?: CategoryId[]) => void
   atualizarFase: (aulaId: string, faseId: string, patch: Partial<Omit<ClassPhase, 'id' | 'itens'>>) => void
@@ -98,6 +100,11 @@ export const useClassStore = create<ClassState>()(
         }
         set((s) => ({ aulas: [nova, ...s.aulas] }))
         return nova.id
+      },
+
+      adicionarAula: (aula) => {
+        set((s) => ({ aulas: [aula, ...s.aulas] }))
+        return aula.id
       },
 
       adicionarFase: (aulaId, nome, categorias = []) =>

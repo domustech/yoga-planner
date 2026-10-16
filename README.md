@@ -52,6 +52,14 @@ Notas:
 ## Funcionalidades
 
 - **Aulas**: criar, duplicar, apagar, importar/exportar (JSON). Cada aula tem nome, nível, duração alvo e tema.
+- **Criar aula automática** (wizard): em seis passos escolhe-se o tipo de aula (Hatha clássica, suave, dinâmica,
+  restaurativa, pranayama e meditação), duração (30–90 min), nível, efeito pretendido (calmante, energizante,
+  equilibrante), focos corporais e chakras, opções (Saudação ao Sol, inversões, mudras, Yoga Nidra) e acessórios
+  disponíveis. O gerador (`src/lib/classGenerator.ts`) distribui o tempo pelas fases segundo o tipo, escolhe
+  posturas por pontuação (efeito, chakras, foco, nível), ordena o chão de forma lógica, junta contra-posturas às
+  extensões e inversões, anota variações com os acessórios escolhidos e acerta as durações ao minuto. A
+  pré-visualização permite pedir "Outra sugestão" antes de criar; a aula fica depois editável como qualquer outra.
+  `npm run gen:smoke` valida 150 combinações (duração exata, níveis, sem repetições).
 - **Fases da aula**: cada aula nova começa com a estrutura clássica de Hatha
   (Centramento → Pranayama → Aquecimento → Saudação ao Sol → Posturas em pé → Posturas no chão →
   Inversões → Relaxamento final → Meditação e encerramento). As fases podem ser renomeadas,

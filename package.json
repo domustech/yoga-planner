@@ -13,7 +13,8 @@
     "icons": "node scripts/generate-icons.mjs",
     "build:pages": "tsc -b && vite build --mode pages",
     "preview:pages": "vite preview --mode pages --port 4173",
-    "pdf:smoke": "node scripts/pdf-smoke.mjs"
+    "pdf:smoke": "node scripts/pdf-smoke.mjs",
+    "gen:smoke": "node scripts/generator-smoke.mjs"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
