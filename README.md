@@ -16,6 +16,37 @@ npm run dev
 
 Abra <http://localhost:5173>. Para gerar a versão de produção: `npm run build` (saída em `dist/`).
 
+Para testar num telemóvel ou tablet na mesma rede Wi-Fi: `npm run dev:lan` e abra o endereço
+`http://<IP-do-computador>:5173` que o Vite mostra no terminal (o Windows pode pedir para permitir
+o Node na firewall da rede privada).
+
+## Publicação (GitHub Pages) e instalação no iPhone
+
+A app está publicada em **<https://domustech.github.io/yoga-planner/>**. Cada `git push` para `main`
+corre o workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), que faz
+`npm run build:pages` (build com base `/yoga-planner/`), copia `index.html` para `404.html`
+(fallback para as rotas da SPA) e publica a pasta `dist/` no GitHub Pages.
+
+A app é uma **PWA**: tem manifest, ícones e service worker (gerados por `vite-plugin-pwa`), por isso
+pode ser instalada e funciona offline depois da primeira visita.
+
+Instalar no iPhone / iPad:
+
+1. Abrir o endereço acima no **Safari** (tem de ser o Safari).
+2. Tocar no botão **Partilhar** (quadrado com seta) e escolher **Adicionar ao ecrã principal**.
+3. Confirmar o nome "Yoga Planner". O ícone aparece no ecrã principal e a app abre a ecrã inteiro.
+
+Em Android (Chrome): menu ⋮ → **Instalar aplicação**.
+
+Notas:
+- Os dados (aulas) ficam guardados no próprio dispositivo; a app instalada no iPhone não partilha dados
+  com o browser do computador. Use **Exportar / Importar** para passar aulas entre dispositivos.
+- Em ecrãs estreitos, arrastar da biblioteca para as fases não está disponível: use o botão **+** de cada
+  postura (adiciona à fase selecionada). Dentro de uma fase, arraste pela pega ⋮⋮ com toque longo.
+- Para pré-visualizar localmente a build tal como fica no Pages: `npm run build:pages && npm run preview:pages`
+  e abrir <http://localhost:4173/yoga-planner/>.
+- Para regenerar os ícones (a partir do SVG em `scripts/generate-icons.mjs`): `npm run icons`.
+
 ## Funcionalidades
 
 - **Aulas**: criar, duplicar, apagar, importar/exportar (JSON). Cada aula tem nome, nível, duração alvo e tema.
@@ -69,7 +100,7 @@ src/
     utils.ts, classFactory.ts
 ```
 
-Stack: Vite, React 19, TypeScript, zustand, @dnd-kit, react-router, lucide-react. Sem backend.
+Stack: Vite, React 19, TypeScript, zustand, @dnd-kit, react-router, lucide-react, vite-plugin-pwa. Sem backend.
 
 ## Como adicionar uma postura
 
@@ -95,4 +126,4 @@ Use **Exportar** para guardar uma cópia em JSON e **Importar** para a repor nou
    (ex.: inversão sem contra-postura).
 5. Modelos de aula por tema (ancas, costas, relaxamento) e geração assistida de sequências.
 6. Outras linhagens além do Hatha (Vinyasa, Yin, Restaurativo) e aulas para alunos.
-7. PWA instalável e uso offline.
+7. App nativa (Capacitor) para a App Store, se a PWA deixar de chegar.

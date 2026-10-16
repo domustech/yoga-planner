@@ -23,7 +23,10 @@ const router = createBrowserRouter([
     ],
   },
   { path: '/aula/:id/imprimir', element: <PrintPage /> },
-])
+], {
+  // Em GitHub Pages a app vive em /yoga-planner/; em desenvolvimento em /.
+  basename: import.meta.env.BASE_URL.replace(/\/$/, '') || '/',
+})
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
