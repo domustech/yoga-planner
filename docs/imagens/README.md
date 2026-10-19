@@ -1,9 +1,12 @@
 # Ilustrações das posturas
 
 As 123 posturas têm uma ilustração própria em `public/poses/<id>.webp` (importadas a 19/10/2026 do
-conjunto `hatha_yoga_imagens.zip`: personagem única, fundo creme, círculo sálvia e tapete; originais
-1024×1536 PNG, convertidas para 720 px WebP com o fundo original). Aparecem no detalhe da postura, em
-`/figuras` e no PDF da aula. Nos cartões e no editor continuam a usar-se as figuras esquemáticas de linha.
+conjunto `hatha_yoga_aguarela.zip`: aguarela solta, personagem única, fundo branco com salpicos leves;
+originais 1024×1536 PNG, convertidas para 720 px WebP com o fundo original). São usadas em todo o lado:
+cartões da biblioteca, posturas da aula no editor, wizard, detalhe da postura, `/figuras`, impressão e PDF
+(componentes `PoseVisual` e `PoseThumb`). Ao passar o rato sobre uma miniatura abre-se uma
+pré-visualização ampliada (300 px) sem abrir o cartão; só em dispositivos com rato. As figuras esquemáticas
+de linha ficam apenas como recurso para posturas sem imagem.
 
 Quando uma postura não tem imagem, o detalhe mostra a ilustração editorial gerada pela app
 (componente `FlatFigure`). Para exportar as ilustrações geradas em PNG:

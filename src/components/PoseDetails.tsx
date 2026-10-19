@@ -9,7 +9,6 @@ import { formatDuration } from '../lib/utils'
 import { AlignmentList } from './AlignmentList'
 import { CategoryChip } from './CategoryChip'
 import { PoseIllustration } from './PoseIllustration'
-import { PoseVisual } from './PoseVisual'
 
 interface Props {
   poseId: string | null
@@ -49,9 +48,6 @@ export function PoseDetails({ poseId, onClose, onAdd, addLabel }: Props) {
 
         <div className="modal-figure modal-figure-wc" style={{ color: cat.cor }}>
           <PoseIllustration pose={pose} title={pose.nome} />
-          <div className="modal-figure-mini" title="Figura esquemática">
-            <PoseVisual pose={pose} chao={false} />
-          </div>
         </div>
 
         <div className="modal-body">

@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react'
 import { PoseIllustration } from '../components/PoseIllustration'
-import { hasPoseImage, PoseVisual } from '../components/PoseVisual'
+import { hasPoseImage } from '../components/PoseVisual'
 import { CATEGORY_MAP } from '../data/categories'
 import { POSES } from '../data/poses'
 
@@ -17,8 +17,8 @@ export function FiguresPage() {
         <div>
           <h1>Revisão das ilustrações</h1>
           <p className="muted">
-            Ilustrações das posturas: {comImagem} de {POSES.length} têm imagem própria (etiqueta "imagem"); as restantes mostram a
-            ilustração gerada pela app. As miniaturas são as figuras esquemáticas usadas nos cartões e no editor.
+            Ilustrações das posturas: {comImagem} de {POSES.length} têm imagem própria; as restantes (etiqueta "gerada") mostram a
+            ilustração gerada pela app. Passe o rato sobre qualquer miniatura na biblioteca ou no editor para a ampliar.
           </p>
         </div>
       </header>
@@ -30,10 +30,7 @@ export function FiguresPage() {
             <div key={p.id} className="figure-tile" style={{ '--cat': cat.cor } as CSSProperties}>
               <div className="figure-tile-img figure-tile-wc">
                 <PoseIllustration pose={p} title={p.nome} />
-                {propria && <span className="falta tem">imagem</span>}
-                <span className="figure-tile-mini">
-                  <PoseVisual pose={p} chao={false} />
-                </span>
+                {!propria && <span className="falta">gerada</span>}
               </div>
               <strong>{p.nome}</strong>
               <em>{p.sanscrito}</em>

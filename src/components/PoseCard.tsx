@@ -6,7 +6,7 @@ import { CHAKRA_MAP } from '../data/chakras'
 import type { Pose } from '../data/types'
 import { formatDuration } from '../lib/utils'
 import { CategoryChip } from './CategoryChip'
-import { PoseVisual } from './PoseVisual'
+import { PoseThumb } from './PoseThumb'
 
 interface Props {
   pose: Pose
@@ -31,7 +31,7 @@ export function PoseCard({ pose, onDetails, onAdd, addTitle, dragRef, dragProps,
       {...dragProps}
     >
       <div className="pose-card-figure">
-        <PoseVisual pose={pose} title={pose.nome} />
+        <PoseThumb pose={pose} />
       </div>
       <div className="pose-card-body">
         <strong className="pose-card-name">{pose.nome}</strong>

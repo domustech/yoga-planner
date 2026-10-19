@@ -2278,24 +2278,6 @@ button.chip:hover {
   border-radius: 14px;
 }
 
-.modal-figure-mini {
-  position: absolute;
-  right: 12px;
-  bottom: 12px;
-  width: 54px;
-  height: 54px;
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 3px;
-  box-shadow: var(--shadow-sm);
-}
-
-.modal-figure-mini svg {
-  width: 100%;
-  height: 100%;
-}
-
 .figures-grid-wc {
   grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
 }
@@ -2304,28 +2286,6 @@ button.chip:hover {
   position: relative;
   background: #fdfbf7;
   overflow: hidden;
-}
-
-.figure-tile-mini {
-  position: absolute;
-  left: 6px;
-  bottom: 6px;
-  width: 34px;
-  height: 34px;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 2px;
-}
-
-.figure-tile-mini svg {
-  width: 100%;
-  height: 100%;
-}
-
-.figure-tile .falta.tem {
-  background: #e4efe2;
-  color: #3f6a47;
 }
 
 @media (max-width: 640px) {
@@ -2337,5 +2297,107 @@ button.chip:hover {
   .modal-figure-wc .pose-img {
     max-width: 200px;
     margin: 0 auto;
+  }
+}
+
+/* ------------------------------------------------------------------------
+   Miniaturas com imagem e pré-visualização ampliada ao passar o rato
+   ------------------------------------------------------------------------ */
+
+.pose-thumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.pose-thumb svg,
+.pose-thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .pose-thumb:has(.pose-img) {
+    cursor: zoom-in;
+  }
+}
+
+.pose-peek {
+  position: fixed;
+  z-index: 1200;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 14px 44px rgba(70, 50, 35, 0.26), 0 2px 8px rgba(70, 50, 35, 0.12);
+  padding: 8px;
+  pointer-events: none;
+  animation: peek-in 0.14s ease-out;
+}
+
+.pose-peek img,
+.pose-peek svg {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+  background: #fff;
+}
+
+.pose-peek-name {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 13.5px;
+  margin-top: 6px;
+  line-height: 1.2;
+}
+
+.pose-peek-name em {
+  display: block;
+  font-weight: 400;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@keyframes peek-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* cartões e itens da aula com a imagem a preencher a moldura */
+.pose-card {
+  grid-template-columns: 72px minmax(0, 1fr) auto;
+}
+
+.pose-card-figure {
+  width: 72px;
+  height: 72px;
+  padding: 0;
+  overflow: hidden;
+  background: #fff;
+}
+
+.item-row {
+  grid-template-columns: 22px 54px minmax(0, 1fr) auto auto;
+}
+
+.item-figure {
+  width: 54px;
+  height: 54px;
+  padding: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .item-row {
+    grid-template-columns: 22px 54px minmax(0, 1fr);
   }
 }

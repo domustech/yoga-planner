@@ -9,7 +9,7 @@ import type { ClassItem, ClassPhase } from '../data/types'
 import { useClassStore } from '../store/useClassStore'
 import { AlignmentList } from './AlignmentList'
 import { DurationControl } from './DurationControl'
-import { PoseVisual } from './PoseVisual'
+import { PoseThumb } from './PoseThumb'
 
 interface Props {
   aulaId: string
@@ -73,7 +73,7 @@ export function ClassItemRow({ aulaId, faseId, item, index, fases, onDetails }: 
         </button>
 
         <div className="item-figure">
-          <PoseVisual pose={pose} chao={false} />
+          <PoseThumb pose={pose} />
         </div>
 
         <button type="button" className="item-body" onClick={() => setOpen((o) => !o)} title="Notas e opções">

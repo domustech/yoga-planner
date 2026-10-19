@@ -71,7 +71,7 @@ export function PrintPage() {
                 return (
                   <div key={it.id} className="print-card" style={{ '--cat': cat.cor } as CSSProperties}>
                     <div className="print-card-figure">
-                      <PoseVisual pose={pose} />
+                      <PoseVisual pose={pose} eager />
                     </div>
                     <strong>{pose.nome}</strong>
                     <em>{pose.sanscrito}</em>

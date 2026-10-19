@@ -75,13 +75,14 @@ Notas:
 - **Saber** (rota `/saber`): conhecimento de apoio para meditações e conversas com alunos: caminhos do Yoga,
   os oito membros e sutras essenciais de Patanjali, Vedanta básico (na linha de Swami Dayananda Saraswati),
   chakras ligados à biblioteca, roteiros de meditação e glossário, com pesquisa.
-- **Ilustrações das posturas**: as 123 posturas têm uma ilustração própria em `public/poses/<id>.webp`
-  (personagem única, fundo creme, tapete), mostrada no detalhe da postura, em `/figuras` e no PDF da aula.
-  Nos cartões e no editor usa-se a figura esquemática ("boneco de linha") gerada por SVG a partir das
-  articulações, que é compacta e legível em tamanhos pequenos. Para substituir ou acrescentar imagens, ver
-  [`docs/imagens/README.md`](docs/imagens/README.md) (`npm run imagens:importar -- <pasta>`). Quando uma
-  postura não tem imagem, o detalhe mostra a ilustração editorial gerada pela app (`FlatFigure`).
-  A página `/figuras` mostra todas e `node scripts/render-watercolor.mjs <pasta> [--estilo flat|aquarela|silhueta]`
+- **Ilustrações das posturas**: as 123 posturas têm uma ilustração em aguarela própria em `public/poses/<id>.webp`
+  (personagem única, fundo branco), usada em todo o lado: cartões da biblioteca, posturas da aula no editor,
+  wizard, detalhe da postura, `/figuras`, vista de impressão e PDF. Ao passar o rato sobre uma miniatura
+  (biblioteca ou editor) abre-se uma pré-visualização ampliada sem ser preciso abrir o cartão; em ecrãs tácteis
+  não há hover e o detalhe abre como sempre ao tocar. Para substituir ou acrescentar imagens, ver
+  [`docs/imagens/README.md`](docs/imagens/README.md) (`npm run imagens:importar -- <pasta>`). Só quando uma
+  postura não tem imagem se recorre às figuras geradas pela app (figura esquemática SVG nas miniaturas,
+  `FlatFigure` no detalhe). A página `/figuras` mostra todas e `node scripts/render-watercolor.mjs <pasta> [--estilo flat|aquarela|silhueta]`
   exporta-as em PNG (folhas de contacto ou, com `--por-postura`, uma imagem por postura); os estilos `aquarela` e
   `silhueta` são experiências anteriores mantidas para comparação.
 - **Alinhamento**: ao clicar numa postura, a secção "Alinhamento — o que a postura deve assegurar" lista as
@@ -111,7 +112,9 @@ src/
     phases.ts       Modelo de fases de uma aula de Hatha
     poses.ts        Biblioteca de posturas (conteúdo + figuras)
   components/
-    PoseFigure.tsx  Renderizador SVG das figuras a partir das articulações
+    PoseVisual.tsx  Imagem da postura (public/poses) em qualquer tamanho, com recurso à figura SVG
+    PoseThumb.tsx   Miniatura com pré-visualização ampliada ao passar o rato
+    PoseFigure.tsx  Renderizador SVG das figuras a partir das articulações (recurso)
     LibraryPanel, PoseCard, PhaseSection, ClassItemRow, DurationControl,
     PoseDetails (modal), ClassTimeline, CategoryChip
   pages/

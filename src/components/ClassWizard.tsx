@@ -19,7 +19,7 @@ import {
 } from '../lib/classGenerator'
 import { classDuration, classItemCount, formatDuration, formatDurationLong, phaseDuration } from '../lib/utils'
 import { ClassTimeline } from './ClassTimeline'
-import { PoseVisual } from './PoseVisual'
+import { PoseThumb } from './PoseThumb'
 import './ClassWizard.css'
 
 interface Props {
@@ -313,7 +313,7 @@ export function ClassWizard({ open, onClose, onCreate }: Props) {
                       return (
                         <span key={it.id} className="wiz-item" style={{ '--cat': cor } as CSSProperties} title={it.notas ?? pose.sanscrito}>
                           <span className="fig">
-                            <PoseVisual pose={pose} chao={false} />
+                            <PoseThumb pose={pose} />
                           </span>
                           {pose.nome}
                           <time>{formatDuration(it.duracao)}</time>
