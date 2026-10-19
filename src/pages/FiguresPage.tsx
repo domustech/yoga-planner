@@ -17,9 +17,8 @@ export function FiguresPage() {
         <div>
           <h1>Revisão das ilustrações</h1>
           <p className="muted">
-            Biblioteca de ilustrações gerada a partir das articulações de cada postura (estilo editorial, personagem única);{' '}
-            {comImagem} de {POSES.length} têm imagem própria (etiqueta "imagem"), que substitui a gerada. As miniaturas são as
-            figuras esquemáticas dos cartões.
+            Ilustrações das posturas: {comImagem} de {POSES.length} têm imagem própria (etiqueta "imagem"); as restantes mostram a
+            ilustração gerada pela app. As miniaturas são as figuras esquemáticas usadas nos cartões e no editor.
           </p>
         </div>
       </header>

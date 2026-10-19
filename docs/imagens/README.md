@@ -1,15 +1,18 @@
-# Ilustrações das posturas (aquarela)
+# Ilustrações das posturas
 
-Ao abrir o detalhe de uma postura, a app mostra a ilustração editorial **gerada por ela própria**
-a partir das articulações da postura (componente `FlatFigure`): silhueta anatómica, duas tonalidades
-por forma e contorno fino, a mesma personagem em todas (fato inteiro verde-escuro, coque), rosto
-mínimo e disco pastel na cor da categoria. Nos cartões e no editor continuam a usar-se as figuras
-esquemáticas de linha.
+As 123 posturas têm uma ilustração própria em `public/poses/<id>.webp` (importadas a 19/10/2026 do
+conjunto `hatha_yoga_imagens.zip`: personagem única, fundo creme, círculo sálvia e tapete; originais
+1024×1536 PNG, convertidas para 720 px WebP com o fundo original). Aparecem no detalhe da postura, em
+`/figuras` e no PDF da aula. Nos cartões e no editor continuam a usar-se as figuras esquemáticas de linha.
 
-Se existir uma imagem própria em `public/poses/<id>.webp` (por exemplo pintada por um gerador de
-imagens a partir dos prompts abaixo), ela substitui a ilustração gerada no detalhe. Para exportar as
-ilustrações geradas em PNG: `node scripts/render-watercolor.mjs <pasta> [--por-postura] [--estilo flat|aquarela|silhueta]`
-(uma amostra está em `docs/imagens/amostras/biblioteca-editorial-amostra.png`).
+Quando uma postura não tem imagem, o detalhe mostra a ilustração editorial gerada pela app
+(componente `FlatFigure`). Para exportar as ilustrações geradas em PNG:
+`node scripts/render-watercolor.mjs <pasta> [--por-postura] [--estilo flat|aquarela|silhueta]`
+(amostra em `docs/imagens/amostras/biblioteca-editorial-amostra.png`).
+
+O importador aceita ficheiros `<id>.png|jpg|webp`; nomes com prefixo numérico ou em sânscrito
+(ex.: `03_em_pe/04_virabhadrasana_2.png`) precisam de ser renomeados para o id da postura antes
+(ver a tabela de ids em `docs/posturas.md` ou `src/data/poses.ts`).
 
 Estilo de referência: aguarela solta, fundo branco, salpicos leves de tinta, a mesma personagem
 em todas as imagens (cabelo castanho-claro apanhado, top verde-azeitona, leggings azul-esverdeadas).

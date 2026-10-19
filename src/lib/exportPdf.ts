@@ -17,10 +17,49 @@ function isMobileLike(): boolean {
  * - noutros casos descarrega o ficheiro.
  * O gerador (jsPDF) é carregado apenas quando é preciso.
  */
+/** Converte uma ilustração (WebP) num data URL JPEG, para a embeber no PDF. */
+function imagemParaDataUrl(url: string, tamanho = 420): Promise<string | null> {
+  return new Promise((resolve) => {
+    const img = new Image()
+    img.onload = () => {
+      try {
+        const canvas = document.createElement('canvas')
+        canvas.width = tamanho
+        canvas.height = tamanho
+        const ctx = canvas.getContext('2d')
+        if (!ctx) return resolve(null)
+        ctx.fillStyle = '#ffffff'
+        ctx.fillRect(0, 0, tamanho, tamanho)
+        ctx.drawImage(img, 0, 0, tamanho, tamanho)
+        resolve(canvas.toDataURL('image/jpeg', 0.86))
+      } catch {
+        resolve(null)
+      }
+    }
+    img.onerror = () => resolve(null)
+    img.src = url
+  })
+}
+
+/** Carrega as ilustrações das posturas usadas na aula (quando existem). */
+async function carregarIlustracoes(aula: YogaClass): Promise<Record<string, string>> {
+  const { poseImageUrl } = await import('../components/PoseVisual')
+  const ids = [...new Set(aula.fases.flatMap((f) => f.itens.map((it) => it.poseId)))]
+  const pares = await Promise.all(
+    ids.map(async (id) => {
+      const url = poseImageUrl(id)
+      if (!url) return null
+      const data = await imagemParaDataUrl(url)
+      return data ? ([id, data] as const) : null
+    }),
+  )
+  return Object.fromEntries(pares.filter((p): p is readonly [string, string] => p !== null))
+}
+
 export async function exportClassPdf(aula: YogaClass): Promise<ExportPdfResult> {
-  // O PDF usa as figuras esquemáticas (vetor), como os cartões da aula.
-  const { buildClassPdf } = await import('./pdf/classPdf')
-  const doc = buildClassPdf(aula)
+  // O PDF usa as ilustrações das posturas quando existem; senão, as figuras esquemáticas (vetor).
+  const [{ buildClassPdf }, imagens] = await Promise.all([import('./pdf/classPdf'), carregarIlustracoes(aula)])
+  const doc = buildClassPdf(aula, { imagens })
   const blob = doc.output('blob')
   const filename = `${slugify(aula.nome) || 'aula'}.pdf`
 

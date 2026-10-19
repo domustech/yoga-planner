@@ -9,7 +9,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { join, parse, resolve } from 'node:path'
 import sharp from 'sharp'
 
-const SIZE = 640
+const SIZE = 720
 const PAD = 16
 const OUT_DIR = 'public/poses'
 const MANIFEST = 'src/data/poseImages.ts'
@@ -34,13 +34,17 @@ if (pasta) {
       continue
     }
     const destino = join(OUT_DIR, `${id}.webp`)
-    // recorta margens brancas, encaixa num quadrado com margem e fundo branco, WebP
-    await sharp(join(pasta, f))
-      .flatten({ background: '#ffffff' })
-      .trim({ threshold: 18 })
-      .resize(SIZE - 2 * PAD, SIZE - 2 * PAD, { fit: 'contain', background: '#ffffff' })
-      .extend({ top: PAD, bottom: PAD, left: PAD, right: PAD, background: '#ffffff' })
-      .webp({ quality: 82 })
+    // cor de fundo = pixel do canto superior esquerdo (branco, creme, etc.)
+    const base = sharp(join(pasta, f)).flatten({ background: '#ffffff' })
+    const { data, info } = await base.clone().raw().toBuffer({ resolveWithObject: true })
+    const bg = { r: data[0], g: data[1], b: data[2] }
+    void info
+    // recorta as margens dessa cor, encaixa num quadrado com margem e o mesmo fundo, WebP
+    await base
+      .trim({ threshold: 14 })
+      .resize(SIZE - 2 * PAD, SIZE - 2 * PAD, { fit: 'contain', background: bg })
+      .extend({ top: PAD, bottom: PAD, left: PAD, right: PAD, background: bg })
+      .webp({ quality: 84 })
       .toFile(destino)
     importados++
     console.log('✓', f, '→', destino)

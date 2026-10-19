@@ -75,12 +75,12 @@ Notas:
 - **Saber** (rota `/saber`): conhecimento de apoio para meditações e conversas com alunos: caminhos do Yoga,
   os oito membros e sutras essenciais de Patanjali, Vedanta básico (na linha de Swami Dayananda Saraswati),
   chakras ligados à biblioteca, roteiros de meditação e glossário, com pesquisa.
-- **Duas ilustrações por postura**: nos cartões, no editor, na impressão e no PDF usa-se a figura esquemática
-  ("boneco de linha") gerada por SVG a partir das articulações; ao abrir o detalhe de uma postura aparece a
-  **ilustração editorial** gerada pela app a partir da mesma geometria (`FlatFigure`): silhueta anatómica, duas
-  tonalidades por forma e contorno fino, personagem única (fato inteiro verde-escuro, coque), rosto mínimo, disco
-  pastel na cor da categoria. Sem filtros, por isso fica nítida em qualquer tamanho. Se existir uma imagem própria
-  em `public/poses/<id>.webp`, ela substitui a gerada ([`docs/imagens/README.md`](docs/imagens/README.md)).
+- **Ilustrações das posturas**: as 123 posturas têm uma ilustração própria em `public/poses/<id>.webp`
+  (personagem única, fundo creme, tapete), mostrada no detalhe da postura, em `/figuras` e no PDF da aula.
+  Nos cartões e no editor usa-se a figura esquemática ("boneco de linha") gerada por SVG a partir das
+  articulações, que é compacta e legível em tamanhos pequenos. Para substituir ou acrescentar imagens, ver
+  [`docs/imagens/README.md`](docs/imagens/README.md) (`npm run imagens:importar -- <pasta>`). Quando uma
+  postura não tem imagem, o detalhe mostra a ilustração editorial gerada pela app (`FlatFigure`).
   A página `/figuras` mostra todas e `node scripts/render-watercolor.mjs <pasta> [--estilo flat|aquarela|silhueta]`
   exporta-as em PNG (folhas de contacto ou, com `--por-postura`, uma imagem por postura); os estilos `aquarela` e
   `silhueta` são experiências anteriores mantidas para comparação.
