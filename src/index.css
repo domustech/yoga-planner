@@ -2401,3 +2401,186 @@ button.chip:hover {
     grid-template-columns: 22px 54px minmax(0, 1fr);
   }
 }
+
+/* ------------------------------------------------------------------------
+   Ecrãs estreitos: o editor não pode ficar mais largo do que o ecrã
+   ------------------------------------------------------------------------ */
+
+.brand {
+  white-space: nowrap;
+}
+
+.topnav-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+@media (max-width: 960px) {
+  /* 1fr tinha min-width automático: a coluna das fases crescia até à largura
+     do conteúdo mais largo e o telemóvel ficava com scroll horizontal. */
+  .editor-main {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .phases {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .topnav {
+    gap: 10px;
+  }
+
+  .topnav-links {
+    gap: 2px;
+  }
+
+  .topnav-links a {
+    padding: 6px 9px;
+    font-size: 13.5px;
+  }
+
+  .nav-settings span {
+    display: none;
+  }
+
+  .editor-actions {
+    flex-wrap: wrap;
+  }
+
+  .editor-actions .btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .brand-text {
+    display: none;
+  }
+}
+
+/* ------------------------------------------------------------------------
+   Definições
+   ------------------------------------------------------------------------ */
+
+.settings {
+  max-width: 760px;
+}
+
+.settings-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 16px 18px;
+  margin-bottom: 14px;
+}
+
+.settings-card h2 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary-700);
+}
+
+.settings-card > .muted {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.settings-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.settings-card .field-inline input[type='number'] {
+  width: 90px;
+}
+
+.switch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.switch-row:first-of-type {
+  border-top: none;
+}
+
+.switch-row > span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.switch-row small {
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+
+.switch-row input[type='checkbox'] {
+  appearance: none;
+  -webkit-appearance: none;
+  flex: none;
+  width: 44px;
+  height: 26px;
+  border-radius: 999px;
+  background: var(--surface-3);
+  border: 1px solid var(--border-strong);
+  position: relative;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin: 0;
+}
+
+.switch-row input[type='checkbox']::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s;
+}
+
+.switch-row input[type='checkbox']:checked {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.switch-row input[type='checkbox']:checked::after {
+  transform: translateX(18px);
+}
+
+.switch-row input[type='checkbox']:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.settings-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.settings .hint {
+  margin: 10px 0 0;
+}

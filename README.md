@@ -92,6 +92,18 @@ Notas:
 - **Editor**: arrastar e largar da biblioteca para as fases, reordenar dentro da fase, mover entre fases,
   duração por postura (m:ss, botões ±15 s), indicação de posturas bilaterais, notas por postura,
   barra cronológica colorida por categoria e comparação com a duração alvo.
+- **Praticar** (botão no editor e na lista de aulas, rota `/aula/:id/praticar`): modo de aula em ecrã completo
+  que percorre as posturas pela ordem planeada, com a ilustração, o nome e as indicações de alinhamento por baixo,
+  um contador decrescente com a duração de cada postura (avança sozinho no fim; nas posturas bilaterais avisa
+  para trocar de lado a meio) e controlos Anterior / Pausa / Seguinte / Stop. Antes de cada postura há um **tempo
+  de preparação** (10 s por omissão, configurável em Definições; "Começar já" salta-o) e nos **últimos 5 segundos**
+  de cada contagem soa um bip por segundo, com um sinal diferente no início e no fim de cada postura (Web Audio,
+  sem ficheiros; no iPhone o som fica disponível depois de tocar em "Iniciar aula" e respeita o interruptor de
+  silêncio). Pede ecrã completo e mantém o ecrã aceso quando o browser o permite; teclado: espaço pausa, setas
+  mudam de postura, Esc termina. No fim mostra um resumo com as posturas e o tempo praticados.
+- **Definições** (menu a seguir a Saber, rota `/definicoes`): tempo de preparação antes de cada postura, sinais
+  sonoros ligados/desligados (também há um botão de som no topo do modo de prática), vibração (Android) e um botão
+  para testar o som. Guardadas em `localStorage` (`yoga-planner:definicoes`).
 - **Exportar PDF**: o botão **PDF** (no editor, na lista de aulas e na vista de impressão) gera no próprio
   dispositivo um PDF A4 com cabeçalho, barra cronológica e, por fase, os cartões das posturas com as figuras
   em vetor, durações e notas. No iPhone/iPad abre a folha de partilha (Imprimir, Guardar em Ficheiros, Mail,
@@ -119,14 +131,18 @@ src/
     PoseDetails (modal), ClassTimeline, CategoryChip
   pages/
     ClassesPage     Lista de aulas
+    PracticePage    Modo de prática: ecrã completo, preparação, contador decrescente, bips e controlos (+ .css)
+    SettingsPage    Definições (tempo de preparação, sinais sonoros, vibração)
     ClassEditorPage Editor (fases + biblioteca, drag & drop)
     LibraryPage     Galeria de posturas (filtros por tipo, nível, efeito, chakra, acessório)
     KnowledgePage   Saber: conhecimento de apoio (/saber)
     PrintPage       Vista de impressão (/aula/:id/imprimir)
     FiguresPage     Revisão de todas as figuras (/figuras, sem link no menu)
   store/
+    useSettingsStore.ts  Definições do utilizador (zustand persist, chave yoga-planner:definicoes)
     useClassStore.ts  Estado das aulas (zustand + persistência em localStorage)
   lib/
+    som.ts          Bips do modo de prática (Web Audio) e vibração
     utils.ts, classFactory.ts
 ```
 

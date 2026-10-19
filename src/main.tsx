@@ -8,7 +8,9 @@ import { ClassesPage } from './pages/ClassesPage'
 import { FiguresPage } from './pages/FiguresPage'
 import { KnowledgePage } from './pages/KnowledgePage'
 import { LibraryPage } from './pages/LibraryPage'
+import { PracticePage } from './pages/PracticePage'
 import { PrintPage } from './pages/PrintPage'
+import { SettingsPage } from './pages/SettingsPage'
 
 const router = createBrowserRouter([
   {
@@ -19,10 +21,12 @@ const router = createBrowserRouter([
       { path: 'biblioteca', element: <LibraryPage /> },
       { path: 'saber', element: <KnowledgePage /> },
       { path: 'figuras', element: <FiguresPage /> },
+      { path: 'definicoes', element: <SettingsPage /> },
       { path: 'aula/:id', element: <ClassEditorPage /> },
     ],
   },
   { path: '/aula/:id/imprimir', element: <PrintPage /> },
+  { path: '/aula/:id/praticar', element: <PracticePage /> },
 ], {
   // Em GitHub Pages a app vive em /yoga-planner/; em desenvolvimento em /.
   basename: import.meta.env.BASE_URL.replace(/\/$/, '') || '/',

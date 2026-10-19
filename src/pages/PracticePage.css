@@ -1,0 +1,499 @@
+/* ------------------------------------------------------------------------
+   Modo de prática (/aula/:id/praticar): ecrã completo, imagem, indicações,
+   contador decrescente e controlos.
+   ------------------------------------------------------------------------ */
+
+.practice {
+  --cat: var(--primary);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: #fbf8f3;
+  color: var(--text);
+  padding-top: env(safe-area-inset-top);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  overflow: hidden;
+}
+
+.practice-empty {
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.practice-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.practice-crumb {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.2;
+}
+
+.practice-crumb strong {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.practice-crumb span {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.practice-count {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--primary-700);
+  background: var(--primary-soft);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+/* ---- corpo: imagem, estado (título + contador) e indicações ------------ */
+
+.practice-main {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-rows: minmax(160px, 38vh) auto minmax(0, 1fr);
+  grid-template-areas:
+    'figura'
+    'estado'
+    'indicacoes';
+}
+
+.practice-figure {
+  grid-area: figura;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px 4px;
+  min-height: 0;
+}
+
+.practice-figure img,
+.practice-figure svg {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(70, 50, 35, 0.1);
+  color: var(--cat);
+}
+
+.practice-status {
+  grid-area: estado;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    'titulo relogio'
+    'barra barra';
+  align-items: center;
+  column-gap: 16px;
+  padding: 6px 16px 0;
+}
+
+.practice-title {
+  grid-area: titulo;
+  min-width: 0;
+}
+
+.practice-title h1 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.15;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.practice-title .tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--muted);
+}
+
+.practice-title .tag.is-on {
+  background: var(--accent);
+  color: #fff;
+}
+
+.practice-sanskrit {
+  margin: 2px 0 0;
+  font-style: italic;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.practice-timer {
+  grid-area: relogio;
+  text-align: right;
+  line-height: 1;
+}
+
+.practice-clock {
+  display: block;
+  font-size: 54px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+  color: var(--primary-700);
+  transition: color 0.2s;
+}
+
+.practice-timer-sub {
+  display: block;
+  margin-top: 4px;
+  font-size: 12.5px;
+  color: var(--muted);
+  min-height: 1.2em;
+}
+
+.practice-timer.is-ending .practice-clock {
+  color: var(--accent);
+  animation: practice-pulse 1s ease-in-out infinite;
+}
+
+.is-paused .practice-clock {
+  color: var(--muted);
+}
+
+@keyframes practice-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+.practice-progress {
+  grid-area: barra;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--surface-3);
+  margin: 8px 0 4px;
+  overflow: hidden;
+}
+
+.practice-progress span {
+  display: block;
+  height: 100%;
+  background: var(--cat);
+  border-radius: inherit;
+  transition: width 0.2s linear;
+}
+
+.practice-cues {
+  grid-area: indicacoes;
+  min-height: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 8px 16px 16px;
+  font-size: 15px;
+}
+
+.practice-cues .align-list {
+  font-size: 15px;
+  gap: 8px 16px;
+}
+
+.practice-cues .align-erros,
+.practice-cues .align-entrada {
+  font-size: 14px;
+}
+
+.practice-notes {
+  margin: 0 0 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fff6ea;
+  border-left: 4px solid #e2b07a;
+  font-size: 15px;
+  white-space: pre-wrap;
+}
+
+.practice-phase-notes {
+  margin: 0 0 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--primary-soft);
+  color: var(--primary-700);
+  font-size: 14px;
+}
+
+.practice-breath {
+  margin: 0 0 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: var(--primary-700);
+  font-size: 14.5px;
+}
+
+.practice-breath svg {
+  flex: none;
+  margin-top: 2px;
+}
+
+.practice-next {
+  margin: 14px 0 0;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border-strong);
+  color: var(--muted);
+  font-size: 13.5px;
+}
+
+/* ---- controlos ---------------------------------------------------------- */
+
+.practice-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 16px calc(12px + env(safe-area-inset-bottom));
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.practice-start {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  border-radius: 999px;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(111, 146, 112, 0.35);
+}
+
+.practice-start:hover {
+  background: var(--primary-700);
+}
+
+.practice-ctl {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.practice-ctl small {
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.practice-ctl:hover:not(:disabled) {
+  background: var(--surface-2);
+}
+
+.practice-ctl:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+.practice-ctl:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.practice-ctl.is-main {
+  width: 84px;
+  height: 84px;
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(111, 146, 112, 0.35);
+}
+
+.practice-ctl.is-main:hover {
+  background: var(--primary-700);
+}
+
+.practice-ctl.is-stop {
+  color: #b2524f;
+  border-color: #e4c2c0;
+}
+
+.practice-ctl.is-stop:hover {
+  background: #fbeeed;
+}
+
+/* ---- aula concluída ------------------------------------------------------ */
+
+.practice-done {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  padding: 24px;
+}
+
+.practice-done-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--primary-soft);
+  color: var(--primary-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+
+.practice-done h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.practice-done-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ---- ecrãs largos: imagem à esquerda, indicações à direita --------------- */
+
+@media (min-width: 900px) and (orientation: landscape) {
+  .practice-main {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) auto;
+    grid-template-areas:
+      'figura indicacoes'
+      'estado indicacoes';
+    column-gap: 8px;
+  }
+
+  .practice-figure {
+    padding: 18px 12px 8px 24px;
+  }
+
+  .practice-status {
+    padding: 8px 12px 12px 24px;
+  }
+
+  .practice-cues {
+    padding: 22px 28px 24px 12px;
+    border-left: 1px solid var(--border);
+    font-size: 16px;
+  }
+
+  .practice-cues .align-list {
+    font-size: 16px;
+    gap: 10px 18px;
+  }
+
+  .practice-clock {
+    font-size: 84px;
+  }
+
+  .practice-title h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 420px) {
+  .practice-clock {
+    font-size: 46px;
+  }
+
+  .practice-title h1 {
+    font-size: 19px;
+  }
+
+  .practice-controls {
+    gap: 12px;
+  }
+
+  .practice-ctl {
+    width: 58px;
+    height: 58px;
+  }
+
+  .practice-ctl.is-main {
+    width: 76px;
+    height: 76px;
+  }
+}
+
+@media print {
+  .practice {
+    display: none;
+  }
+}
+
+/* ---- preparação antes de cada postura ---------------------------------- */
+
+.practice.is-prep .practice-clock {
+  color: #c98a4b;
+}
+
+.practice.is-prep .practice-progress span {
+  background: #e2b07a;
+}
+
+.practice-title .tag.is-prep {
+  background: #fff1df;
+  color: #a86a2c;
+}
+
+.practice-skip {
+  display: inline-block;
+  margin-top: 6px;
+  border: 1px solid #e2b07a;
+  background: #fff6ea;
+  color: #a86a2c;
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.practice-skip:hover {
+  background: #fdebd4;
+}
+
+.practice-sound.is-off {
+  color: var(--muted);
+}

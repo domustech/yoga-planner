@@ -1,3 +1,4 @@
+import { Settings } from 'lucide-react'
 import { useEffect } from 'react'
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import { PoseFigure } from './components/PoseFigure'
@@ -17,7 +18,7 @@ export default function App() {
       <nav className="topnav">
         <Link to="/" className="brand">
           <span className="brand-logo">{logo && <PoseFigure figura={logo.figura} chao={false} cor="#fff" />}</span>
-          Yoga Planner
+          <span className="brand-text">Yoga Planner</span>
         </Link>
         <div className="topnav-links">
           <NavLink to="/" end>
@@ -25,6 +26,10 @@ export default function App() {
           </NavLink>
           <NavLink to="/biblioteca">Biblioteca</NavLink>
           <NavLink to="/saber">Saber</NavLink>
+          <NavLink to="/definicoes" className="nav-settings" title="Definições">
+            <Settings size={16} />
+            <span>Definições</span>
+          </NavLink>
         </div>
       </nav>
       <Outlet />

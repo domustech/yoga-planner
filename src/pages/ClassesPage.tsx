@@ -1,4 +1,4 @@
-import { Copy, Download, FilePlus2, Layers, Plus, Trash2, Upload, Wand2 } from 'lucide-react'
+import { Copy, Download, FilePlus2, Layers, Play, Plus, Trash2, Upload, Wand2 } from 'lucide-react'
 import { useRef, useState, type ChangeEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ClassTimeline } from '../components/ClassTimeline'
@@ -115,6 +115,11 @@ export function ClassesPage() {
                   <Link to={`/aula/${aula.id}`} className="btn primary">
                     Abrir
                   </Link>
+                  {classItemCount(aula) > 0 && (
+                    <Link to={`/aula/${aula.id}/praticar`} className="icon-btn" title="Praticar (ecrã completo com temporizador)" aria-label="Praticar">
+                      <Play size={16} />
+                    </Link>
+                  )}
                   <button
                     type="button"
                     className="icon-btn"

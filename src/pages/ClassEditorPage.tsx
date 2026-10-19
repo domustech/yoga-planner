@@ -13,7 +13,7 @@ import {
   type DragStartEvent,
 } from '@dnd-kit/core'
 import { sortableKeyboardCoordinates } from '@dnd-kit/sortable'
-import { ArrowLeft, BookOpen, Download, Plus, Printer } from 'lucide-react'
+import { ArrowLeft, BookOpen, Download, Play, Plus, Printer } from 'lucide-react'
 import { useCallback, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { ClassTimeline } from '../components/ClassTimeline'
@@ -25,7 +25,7 @@ import { PoseDetails } from '../components/PoseDetails'
 import { LEVELS, LEVEL_LABEL } from '../data/categories'
 import { getPose } from '../data/poses'
 import type { Level } from '../data/types'
-import { classDuration, downloadJson, formatDurationLong, slugify } from '../lib/utils'
+import { classDuration, classItemCount, downloadJson, formatDurationLong, slugify } from '../lib/utils'
 import { useClassStore } from '../store/useClassStore'
 
 type DragData =
@@ -174,6 +174,15 @@ export function ClassEditorPage() {
             </div>
           </div>
           <div className="editor-actions">
+            {classItemCount(aula) > 0 ? (
+              <Link className="btn primary" to={`/aula/${aula.id}/praticar`} title="Praticar a aula em ecrã completo, com temporizador">
+                <Play size={16} /> Praticar
+              </Link>
+            ) : (
+              <button type="button" className="btn primary" disabled title="Adicione posturas para praticar">
+                <Play size={16} /> Praticar
+              </button>
+            )}
             <Link className="btn" to={`/aula/${aula.id}/imprimir`}>
               <Printer size={16} /> Imprimir
             </Link>
