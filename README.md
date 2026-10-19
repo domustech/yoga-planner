@@ -76,13 +76,14 @@ Notas:
   os oito membros e sutras essenciais de Patanjali, Vedanta básico (na linha de Swami Dayananda Saraswati),
   chakras ligados à biblioteca, roteiros de meditação e glossário, com pesquisa.
 - **Duas ilustrações por postura**: nos cartões, no editor, na impressão e no PDF usa-se a figura esquemática
-  ("boneco de linha") gerada por SVG a partir das articulações; ao abrir o detalhe de uma postura aparece uma
-  **ilustração em aquarela** gerada pela app a partir da mesma geometria (`WatercolorFigure`): a mesma personagem
-  em todas (cabelo apanhado, top verde-sálvia, leggings verde-água), com manchas, salpicos e grão de papel em
-  tons pastel. Se existir uma imagem própria em `public/poses/<id>.webp`, ela substitui a aquarela gerada; o fluxo
-  para criar e importar imagens está em [`docs/imagens/README.md`](docs/imagens/README.md). A página `/figuras`
-  mostra todas as aquarelas e `node scripts/render-watercolor.mjs <pasta>` exporta-as em PNG (folhas de contacto
-  ou, com `--por-postura`, uma imagem por postura).
+  ("boneco de linha") gerada por SVG a partir das articulações; ao abrir o detalhe de uma postura aparece a
+  **ilustração editorial** gerada pela app a partir da mesma geometria (`FlatFigure`): silhueta anatómica, duas
+  tonalidades por forma e contorno fino, personagem única (fato inteiro verde-escuro, coque), rosto mínimo, disco
+  pastel na cor da categoria. Sem filtros, por isso fica nítida em qualquer tamanho. Se existir uma imagem própria
+  em `public/poses/<id>.webp`, ela substitui a gerada ([`docs/imagens/README.md`](docs/imagens/README.md)).
+  A página `/figuras` mostra todas e `node scripts/render-watercolor.mjs <pasta> [--estilo flat|aquarela|silhueta]`
+  exporta-as em PNG (folhas de contacto ou, com `--por-postura`, uma imagem por postura); os estilos `aquarela` e
+  `silhueta` são experiências anteriores mantidas para comparação.
 - **Alinhamento**: ao clicar numa postura, a secção "Alinhamento — o que a postura deve assegurar" lista as
   indicações parte a parte (pés, pernas, joelhos, ancas, coluna, peito, ombros, braços, mãos, cabeça, olhar,
   respiração, atenção) e os erros comuns, para todas as 123 posturas e práticas (`src/data/alinhamento/`).

@@ -17,8 +17,9 @@ export function FiguresPage() {
         <div>
           <h1>Revisão das ilustrações</h1>
           <p className="muted">
-            Aquarelas geradas a partir das articulações de cada postura; {comImagem} de {POSES.length} têm imagem própria
-            (etiqueta "imagem"), que substitui a gerada. As miniaturas são as figuras esquemáticas dos cartões.
+            Biblioteca de ilustrações gerada a partir das articulações de cada postura (estilo editorial, personagem única);{' '}
+            {comImagem} de {POSES.length} têm imagem própria (etiqueta "imagem"), que substitui a gerada. As miniaturas são as
+            figuras esquemáticas dos cartões.
           </p>
         </div>
       </header>

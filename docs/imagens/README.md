@@ -1,13 +1,15 @@
 # Ilustrações das posturas (aquarela)
 
-Ao abrir o detalhe de uma postura, a app mostra uma ilustração em aquarela **gerada por ela própria**
-a partir das articulações da postura (componente `WatercolorFigure`): a mesma personagem em todas,
-com manchas, salpicos e grão de papel. Nos cartões e no editor continuam a usar-se as figuras
+Ao abrir o detalhe de uma postura, a app mostra a ilustração editorial **gerada por ela própria**
+a partir das articulações da postura (componente `FlatFigure`): silhueta anatómica, duas tonalidades
+por forma e contorno fino, a mesma personagem em todas (fato inteiro verde-escuro, coque), rosto
+mínimo e disco pastel na cor da categoria. Nos cartões e no editor continuam a usar-se as figuras
 esquemáticas de linha.
 
 Se existir uma imagem própria em `public/poses/<id>.webp` (por exemplo pintada por um gerador de
-imagens a partir dos prompts abaixo), ela substitui a aquarela gerada no detalhe. Para exportar as
-aquarelas geradas em PNG: `node scripts/render-watercolor.mjs <pasta> [--por-postura]`.
+imagens a partir dos prompts abaixo), ela substitui a ilustração gerada no detalhe. Para exportar as
+ilustrações geradas em PNG: `node scripts/render-watercolor.mjs <pasta> [--por-postura] [--estilo flat|aquarela|silhueta]`
+(uma amostra está em `docs/imagens/amostras/biblioteca-editorial-amostra.png`).
 
 Estilo de referência: aguarela solta, fundo branco, salpicos leves de tinta, a mesma personagem
 em todas as imagens (cabelo castanho-claro apanhado, top verde-azeitona, leggings azul-esverdeadas).
